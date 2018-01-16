@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ivg.demo.mapper.fixed.StoreInBillMapper">
+    <resultMap id="BaseResultMap" type="com.ivg.demo.model.entity.fixed.StoreInBill">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="num" property="num" jdbcType="VARCHAR"/>
+        <result column="status" property="status" jdbcType="VARCHAR"/>
+        <result column="type" property="type" jdbcType="VARCHAR"/>
+        <result column="plan_qty" property="planQty" jdbcType="BIGINT"/>
+        <result column="container_qty" property="containerQty" jdbcType="BIGINT"/>
+        <result column="qty" property="qty" jdbcType="BIGINT"/>
+        <result column="difference" property="difference" jdbcType="BIGINT"/>
+        <result column="total_price" property="totalPrice" jdbcType="DECIMAL"/>
+        <result column="total_style" property="totalStyle" jdbcType="BIGINT"/>
+        <result column="upstream_bill_num" property="upstreamBillNum" jdbcType="VARCHAR"/>
+        <result column="supplier_id" property="supplierId" jdbcType="BIGINT"/>
+        <result column="supplier_code" property="supplierCode" jdbcType="VARCHAR"/>
+        <result column="supplier_name" property="supplierName" jdbcType="VARCHAR"/>
+        <result column="receiver_id" property="receiverId" jdbcType="BIGINT"/>
+        <result column="receiver_code" property="receiverCode" jdbcType="VARCHAR"/>
+        <result column="receiver_name" property="receiverName" jdbcType="VARCHAR"/>
+        <result column="cellphone" property="cellphone" jdbcType="VARCHAR"/>
+        <result column="erp_num" property="erpNum" jdbcType="VARCHAR"/>
+        <result column="voucher_num" property="voucherNum" jdbcType="VARCHAR"/>
+        <result column="is_syn" property="isSyn" jdbcType="VARCHAR"/>
+        <result column="operator" property="operator" jdbcType="BIGINT"/>
+        <result column="remark" property="remark" jdbcType="VARCHAR"/>
+        <result column="attr01" property="attr01" jdbcType="VARCHAR"/>
+        <result column="attr02" property="attr02" jdbcType="VARCHAR"/>
+        <result column="attr03" property="attr03" jdbcType="VARCHAR"/>
+        <result column="confirm_date" property="confirmDate" jdbcType="TIMESTAMP"/>
+        <result column="create_date" property="createDate" jdbcType="TIMESTAMP"/>
+        <result column="last_update" property="lastUpdate" jdbcType="TIMESTAMP"/>
+        <result column="creater" property="creater" jdbcType="BIGINT"/>
+        <result column="client_id" property="clientId" jdbcType="BIGINT"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, num, status, type, plan_qty, container_qty, qty, difference, total_price, total_style,
+        upstream_bill_num, supplier_id, supplier_code, supplier_name, receiver_id, receiver_code,
+        receiver_name, cellphone, erp_num, voucher_num, is_syn, operator, remark, attr01,
+        attr02, attr03, confirm_date, create_date, last_update, creater, client_id
+    </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select
+        <include refid="Base_Column_List"/>
+        from t_store_in
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        delete from t_store_in
+        where id = #{id,jdbcType=BIGINT}
+    </delete>
+    <insert id="insert" parameterType="com.ivg.demo.model.entity.fixed.StoreInBill">
+        insert into t_store_in (id, num, status,
+        type, plan_qty, container_qty,
+        qty, difference, total_price,
+        total_style, upstream_bill_num, supplier_id,
+        supplier_code, supplier_name, receiver_id,
+        receiver_code, receiver_name, cellphone,
+        erp_num, voucher_num, is_syn,
+        operator, remark, attr01,
+        attr02, attr03, confirm_date,
+        create_date, last_update, creater,
+        client_id)
+        values (#{id,jdbcType=BIGINT}, #{num,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR},
+        #{type,jdbcType=VARCHAR}, #{planQty,jdbcType=BIGINT}, #{containerQty,jdbcType=BIGINT},
+        #{qty,jdbcType=BIGINT}, #{difference,jdbcType=BIGINT}, #{totalPrice,jdbcType=DECIMAL},
+        #{totalStyle,jdbcType=BIGINT}, #{upstreamBillNum,jdbcType=VARCHAR}, #{supplierId,jdbcType=BIGINT},
+        #{supplierCode,jdbcType=VARCHAR}, #{supplierName,jdbcType=VARCHAR}, #{receiverId,jdbcType=BIGINT},
+        #{receiverCode,jdbcType=VARCHAR}, #{receiverName,jdbcType=VARCHAR}, #{cellphone,jdbcType=VARCHAR},
+        #{erpNum,jdbcType=VARCHAR}, #{voucherNum,jdbcType=VARCHAR}, #{isSyn,jdbcType=VARCHAR},
+        #{operator,jdbcType=BIGINT}, #{remark,jdbcType=VARCHAR}, #{attr01,jdbcType=VARCHAR},
+        #{attr02,jdbcType=VARCHAR}, #{attr03,jdbcType=VARCHAR}, #{confirmDate,jdbcType=TIMESTAMP},
+        #{createDate,jdbcType=TIMESTAMP}, #{lastUpdate,jdbcType=TIMESTAMP}, #{creater,jdbcType=BIGINT},
+        #{clientId,jdbcType=BIGINT})
+    </insert>
+    <insert id="insertSelective" parameterType="com.ivg.demo.model.entity.fixed.StoreInBill">
+        insert into t_store_in
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="num != null">
+                num,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="type != null">
+                type,
+            </if>
+            <if test="planQty != null">
+                plan_qty,
+            </if>
+            <if test="containerQty != null">
+                container_qty,
+            </if>
+            <if test="qty != null">
+                qty,
+            </if>
+            <if test="difference != null">
+                difference,
+            </if>
+            <if test="totalPrice != null">
+                total_price,
+            </if>
+            <if test="totalStyle != null">
+                total_style,
+            </if>
+            <if test="upstreamBillNum != null">
+                upstream_bill_num,
+            </if>
+            <if test="supplierId != null">
+                supplier_id,
+            </if>
+            <if test="supplierCode != null">
+                supplier_code,
+            </if>
+            <if test="supplierName != null">
+                supplier_name,
+            </if>
+            <if test="receiverId != null">
+                receiver_id,
+            </if>
+            <if test="receiverCode != null">
+                receiver_code,
+            </if>
+            <if test="receiverName != null">
+                receiver_name,
+            </if>
+            <if test="cellphone != null">
+                cellphone,
+            </if>
+            <if test="erpNum != null">
+                erp_num,
+            </if>
+            <if test="voucherNum != null">
+                voucher_num,
+            </if>
+            <if test="isSyn != null">
+                is_syn,
+            </if>
+            <if test="operator != null">
+                operator,
+            </if>
+            <if test="remark != null">
+                remark,
+            </if>
+            <if test="attr01 != null">
+                attr01,
+            </if>
+            <if test="attr02 != null">
+                attr02,
+            </if>
+            <if test="attr03 != null">
+                attr03,
+            </if>
+            <if test="confirmDate != null">
+                confirm_date,
+            </if>
+            <if test="createDate != null">
+                create_date,
+            </if>
+            <if test="lastUpdate != null">
+                last_update,
+            </if>
+            <if test="creater != null">
+                creater,
+            </if>
+            <if test="clientId != null">
+                client_id,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="num != null">
+                #{num,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="type != null">
+                #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="planQty != null">
+                #{planQty,jdbcType=BIGINT},
+            </if>
+            <if test="containerQty != null">
+                #{containerQty,jdbcType=BIGINT},
+            </if>
+            <if test="qty != null">
+                #{qty,jdbcType=BIGINT},
+            </if>
+            <if test="difference != null">
+                #{difference,jdbcType=BIGINT},
+            </if>
+            <if test="totalPrice != null">
+                #{totalPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="totalStyle != null">
+                #{totalStyle,jdbcType=BIGINT},
+            </if>
+            <if test="upstreamBillNum != null">
+                #{upstreamBillNum,jdbcType=VARCHAR},
+            </if>
+            <if test="supplierId != null">
+                #{supplierId,jdbcType=BIGINT},
+            </if>
+            <if test="supplierCode != null">
+                #{supplierCode,jdbcType=VARCHAR},
+            </if>
+            <if test="supplierName != null">
+                #{supplierName,jdbcType=VARCHAR},
+            </if>
+            <if test="receiverId != null">
+                #{receiverId,jdbcType=BIGINT},
+            </if>
+            <if test="receiverCode != null">
+                #{receiverCode,jdbcType=VARCHAR},
+            </if>
+            <if test="receiverName != null">
+                #{receiverName,jdbcType=VARCHAR},
+            </if>
+            <if test="cellphone != null">
+                #{cellphone,jdbcType=VARCHAR},
+            </if>
+            <if test="erpNum != null">
+                #{erpNum,jdbcType=VARCHAR},
+            </if>
+            <if test="voucherNum != null">
+                #{voucherNum,jdbcType=VARCHAR},
+            </if>
+            <if test="isSyn != null">
+                #{isSyn,jdbcType=VARCHAR},
+            </if>
+            <if test="operator != null">
+                #{operator,jdbcType=BIGINT},
+            </if>
+            <if test="remark != null">
+                #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="attr01 != null">
+                #{attr01,jdbcType=VARCHAR},
+            </if>
+            <if test="attr02 != null">
+                #{attr02,jdbcType=VARCHAR},
+            </if>
+            <if test="attr03 != null">
+                #{attr03,jdbcType=VARCHAR},
+            </if>
+            <if test="confirmDate != null">
+                #{confirmDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createDate != null">
+                #{createDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="lastUpdate != null">
+                #{lastUpdate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="creater != null">
+                #{creater,jdbcType=BIGINT},
+            </if>
+            <if test="clientId != null">
+                #{clientId,jdbcType=BIGINT},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.ivg.demo.model.entity.fixed.StoreInBill">
+        update t_store_in
+        <set>
+            <if test="num != null">
+                num = #{num,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="type != null">
+                type = #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="planQty != null">
+                plan_qty = #{planQty,jdbcType=BIGINT},
+            </if>
+            <if test="containerQty != null">
+                container_qty = #{containerQty,jdbcType=BIGINT},
+            </if>
+            <if test="qty != null">
+                qty = #{qty,jdbcType=BIGINT},
+            </if>
+            <if test="difference != null">
+                difference = #{difference,jdbcType=BIGINT},
+            </if>
+            <if test="totalPrice != null">
+                total_price = #{totalPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="totalStyle != null">
+                total_style = #{totalStyle,jdbcType=BIGINT},
+            </if>
+            <if test="upstreamBillNum != null">
+                upstream_bill_num = #{upstreamBillNum,jdbcType=VARCHAR},
+            </if>
+            <if test="supplierId != null">
+                supplier_id = #{supplierId,jdbcType=BIGINT},
+            </if>
+            <if test="supplierCode != null">
+                supplier_code = #{supplierCode,jdbcType=VARCHAR},
+            </if>
+            <if test="supplierName != null">
+                supplier_name = #{supplierName,jdbcType=VARCHAR},
+            </if>
+            <if test="receiverId != null">
+                receiver_id = #{receiverId,jdbcType=BIGINT},
+            </if>
+            <if test="receiverCode != null">
+                receiver_code = #{receiverCode,jdbcType=VARCHAR},
+            </if>
+            <if test="receiverName != null">
+                receiver_name = #{receiverName,jdbcType=VARCHAR},
+            </if>
+            <if test="cellphone != null">
+                cellphone = #{cellphone,jdbcType=VARCHAR},
+            </if>
+            <if test="erpNum != null">
+                erp_num = #{erpNum,jdbcType=VARCHAR},
+            </if>
+            <if test="voucherNum != null">
+                voucher_num = #{voucherNum,jdbcType=VARCHAR},
+            </if>
+            <if test="isSyn != null">
+                is_syn = #{isSyn,jdbcType=VARCHAR},
+            </if>
+            <if test="operator != null">
+                operator = #{operator,jdbcType=BIGINT},
+            </if>
+            <if test="remark != null">
+                remark = #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="attr01 != null">
+                attr01 = #{attr01,jdbcType=VARCHAR},
+            </if>
+            <if test="attr02 != null">
+                attr02 = #{attr02,jdbcType=VARCHAR},
+            </if>
+            <if test="attr03 != null">
+                attr03 = #{attr03,jdbcType=VARCHAR},
+            </if>
+            <if test="confirmDate != null">
+                confirm_date = #{confirmDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createDate != null">
+                create_date = #{createDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="lastUpdate != null">
+                last_update = #{lastUpdate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="creater != null">
+                creater = #{creater,jdbcType=BIGINT},
+            </if>
+            <if test="clientId != null">
+                client_id = #{clientId,jdbcType=BIGINT},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.ivg.demo.model.entity.fixed.StoreInBill">
+        update t_store_in
+        set num = #{num,jdbcType=VARCHAR},
+        status = #{status,jdbcType=VARCHAR},
+        type = #{type,jdbcType=VARCHAR},
+        plan_qty = #{planQty,jdbcType=BIGINT},
+        container_qty = #{containerQty,jdbcType=BIGINT},
+        qty = #{qty,jdbcType=BIGINT},
+        difference = #{difference,jdbcType=BIGINT},
+        total_price = #{totalPrice,jdbcType=DECIMAL},
+        total_style = #{totalStyle,jdbcType=BIGINT},
+        upstream_bill_num = #{upstreamBillNum,jdbcType=VARCHAR},
+        supplier_id = #{supplierId,jdbcType=BIGINT},
+        supplier_code = #{supplierCode,jdbcType=VARCHAR},
+        supplier_name = #{supplierName,jdbcType=VARCHAR},
+        receiver_id = #{receiverId,jdbcType=BIGINT},
+        receiver_code = #{receiverCode,jdbcType=VARCHAR},
+        receiver_name = #{receiverName,jdbcType=VARCHAR},
+        cellphone = #{cellphone,jdbcType=VARCHAR},
+        erp_num = #{erpNum,jdbcType=VARCHAR},
+        voucher_num = #{voucherNum,jdbcType=VARCHAR},
+        is_syn = #{isSyn,jdbcType=VARCHAR},
+        operator = #{operator,jdbcType=BIGINT},
+        remark = #{remark,jdbcType=VARCHAR},
+        attr01 = #{attr01,jdbcType=VARCHAR},
+        attr02 = #{attr02,jdbcType=VARCHAR},
+        attr03 = #{attr03,jdbcType=VARCHAR},
+        confirm_date = #{confirmDate,jdbcType=TIMESTAMP},
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+        last_update = #{lastUpdate,jdbcType=TIMESTAMP},
+        creater = #{creater,jdbcType=BIGINT},
+        client_id = #{clientId,jdbcType=BIGINT}
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+</mapper>

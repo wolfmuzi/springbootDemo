@@ -1,0 +1,826 @@
+2018-01-11 12:04:58  [ main:88 ] - [ INFO ]  Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nettyBio.BillNumTest], using SpringBootContextLoader
+2018-01-11 12:04:58  [ main:95 ] - [ INFO ]  Could not detect default resource locations for test class [com.nettyBio.BillNumTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-11 12:04:58  [ main:289 ] - [ INFO ]  Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-11 12:04:58  [ main:323 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@8e24743, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@74a10858, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23fe1d71, org.springframework.test.context.transaction.TransactionalTestExecutionListener@28ac3dc3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32eebfca, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e718207, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d371b2d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@543c6f6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13eb8acf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@51c8530f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7403c468]
+2018-01-11 12:04:58  [ main:815 ] - [ INFO ]  Starting BillNumTest on lijin1586 with PID 12084 (started by invengo in D:\ideaSpace\springbootDemo)
+2018-01-11 12:04:58  [ main:816 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-01-11 12:04:59  [ main:1139 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 12:04:59 CST 2018]; root of context hierarchy
+2018-01-11 12:04:59  [ background-preinit:1320 ] - [ INFO ]  HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 12:05:00  [ main:2791 ] - [ INFO ]  Overriding bean definition for bean 'defaultExchange' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpConsumerConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpConsumerConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpProviderConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpProviderConfig.class]]
+2018-01-11 12:05:01  [ main:3134 ] - [ INFO ]  Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-11 12:05:01  [ main:3935 ] - [ INFO ]  Bean 'mybatisConfig' of type [com.ivg.demo.config.MybatisConfig$$EnhancerBySpringCGLIB$$d74c24c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 12:05:02  [ main:4322 ] - [ INFO ]  Bean 'dataSource' of type [org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 12:05:02  [ main:4605 ] - [ INFO ]  Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 12:05:02  [ main:4622 ] - [ INFO ]  Bean 'storeOutBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 12:05:02  [ main:4623 ] - [ INFO ]  Bean 'storeInBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 12:05:02  [ main:4626 ] - [ INFO ]  Bean 'storeInBillExMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 12:05:02  [ main:4676 ] - [ INFO ]  Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$f55e939d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 12:05:03  [ main:5295 ] - [ INFO ]  JedisConnectionFactory bean init success.
+2018-01-11 12:05:04  [ main:6378 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 12:04:59 CST 2018]; root of context hierarchy
+2018-01-11 12:05:04  [ main:6477 ] - [ INFO ]  Mapped "{[/inbill/getInBill]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.getInBillBySupplierCode(java.lang.String)
+2018-01-11 12:05:04  [ main:6478 ] - [ INFO ]  Mapped "{[/inbill/findInBillAll]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.findInBill()
+2018-01-11 12:05:04  [ main:6479 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 12:05:04  [ main:6479 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 12:05:04  [ main:6533 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 12:05:04  [ main:6533 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 12:05:04  [ main:6589 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 12:05:05  [ main:7692 ] - [ INFO ]  Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 12:05:05  [ main:7692 ] - [ INFO ]  Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-01-11 12:05:05  [ main:7693 ] - [ INFO ]  Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-01-11 12:05:05  [ main:7693 ] - [ INFO ]  Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 12:05:05  [ main:7693 ] - [ INFO ]  Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 12:05:05  [ main:7694 ] - [ INFO ]  Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 12:05:05  [ main:7696 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-01-11 12:05:05  [ main:7696 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-01-11 12:05:05  [ main:7697 ] - [ INFO ]  Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 12:05:05  [ main:7697 ] - [ INFO ]  Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 12:05:05  [ main:7698 ] - [ INFO ]  Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 12:05:05  [ main:7698 ] - [ INFO ]  Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 12:05:05  [ main:7701 ] - [ INFO ]  Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-01-11 12:05:05  [ main:7702 ] - [ INFO ]  Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 12:05:05  [ main:7702 ] - [ INFO ]  Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-01-11 12:05:05  [ main:7702 ] - [ INFO ]  Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 12:05:05  [ main:7703 ] - [ INFO ]  Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-01-11 12:05:06  [ main:8109 ] - [ INFO ]  Starting beans in phase 2147483647
+2018-01-11 12:05:06  [ messageContainer-1:8333 ] - [ INFO ]  Created new connection: mqConnectionFactory#1771746e:0/SimpleConnection@73a966b0 [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 61471]
+2018-01-11 12:05:06  [ main:8599 ] - [ INFO ]  Started BillNumTest in 8.132 seconds (JVM running for 9.42)
+2018-01-11 12:05:06  [ ConcurrentTestTools-thread-0:8707 ] - [ INFO ]  ConcurrentTestTools-thread-0 init finshed.
+2018-01-11 12:05:06  [ ConcurrentTestTools-thread-2:8708 ] - [ INFO ]  ConcurrentTestTools-thread-2 init finshed.
+2018-01-11 12:05:06  [ ConcurrentTestTools-thread-7:8708 ] - [ INFO ]  ConcurrentTestTools-thread-7 init finshed.
+2018-01-11 12:05:06  [ ConcurrentTestTools-thread-4:8708 ] - [ INFO ]  ConcurrentTestTools-thread-4 init finshed.
+2018-01-11 12:05:06  [ ConcurrentTestTools-thread-1:8707 ] - [ INFO ]  ConcurrentTestTools-thread-1 init finshed.
+2018-01-11 12:05:06  [ ConcurrentTestTools-thread-9:8708 ] - [ INFO ]  ConcurrentTestTools-thread-9 init finshed.
+2018-01-11 12:05:06  [ ConcurrentTestTools-thread-3:8708 ] - [ INFO ]  ConcurrentTestTools-thread-3 init finshed.
+2018-01-11 12:05:06  [ ConcurrentTestTools-thread-8:8708 ] - [ INFO ]  ConcurrentTestTools-thread-8 init finshed.
+2018-01-11 12:05:06  [ ConcurrentTestTools-thread-6:8708 ] - [ INFO ]  ConcurrentTestTools-thread-6 init finshed.
+2018-01-11 12:05:06  [ ConcurrentTestTools-thread-5:8708 ] - [ INFO ]  ConcurrentTestTools-thread-5 init finshed.
+2018-01-11 12:05:07  [ ConcurrentTestTools-thread-7:9859 ] - [ INFO ]  Created new connection: connectionFactory#4d22fc77:0/SimpleConnection@c1ff64c [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 61472]
+2018-01-11 12:05:08  [ AMQP Connection 116.62.173.111:5672:10017 ] - [ WARN ]  26cde208-ccc1-4185-af4d-814c37045d48:发送成功.
+2018-01-11 12:05:08  [ AMQP Connection 116.62.173.111:5672:10053 ] - [ WARN ]  43295a94-b69a-470e-8266-04e295e2e81a:发送成功.
+2018-01-11 12:05:08  [ AMQP Connection 116.62.173.111:5672:10095 ] - [ WARN ]  daac34f8-20f7-4356-abb9-fe0b099507d0:发送成功.
+2018-01-11 12:05:08  [ AMQP Connection 116.62.173.111:5672:10154 ] - [ WARN ]  0c159aa1-7605-435a-937b-ede8552c1b81:发送成功.
+2018-01-11 12:05:08  [ AMQP Connection 116.62.173.111:5672:10184 ] - [ WARN ]  9468e1ea-81d4-4f92-9aee-eb1469167447:发送成功.
+2018-01-11 12:05:08  [ AMQP Connection 116.62.173.111:5672:10242 ] - [ WARN ]  109f3bdf-c7d1-4757-874f-8c2cb348645c:发送成功.
+2018-01-11 12:05:08  [ AMQP Connection 116.62.173.111:5672:10282 ] - [ WARN ]  1e431493-4a79-4b3b-a98d-f389af5badb1:发送成功.
+2018-01-11 12:05:08  [ AMQP Connection 116.62.173.111:5672:10328 ] - [ WARN ]  24a695c0-0fae-45bf-8977-cf81af480f5d:发送成功.
+2018-01-11 12:05:08  [ AMQP Connection 116.62.173.111:5672:10368 ] - [ WARN ]  78ae7232-9582-44ed-b866-6dc8ecccd2b8:发送成功.
+2018-01-11 12:05:08  [ AMQP Connection 116.62.173.111:5672:10422 ] - [ WARN ]  b78cb794-67ae-4c1c-b856-c4a6881ea2e1:发送成功.
+2018-01-11 12:05:09  [ AMQP Connection 116.62.173.111:5672:11010 ] - [ WARN ]  da63a47d-a2c1-44d6-b7bd-a4798bf7accc:发送成功.
+2018-01-11 12:05:09  [ AMQP Connection 116.62.173.111:5672:11059 ] - [ WARN ]  693a17f9-b983-41dc-80b7-16975bd49861:发送成功.
+2018-01-11 12:05:09  [ AMQP Connection 116.62.173.111:5672:11103 ] - [ WARN ]  5ec543d3-ec5c-4568-af05-326b8f456b17:发送成功.
+2018-01-11 12:05:09  [ AMQP Connection 116.62.173.111:5672:11147 ] - [ WARN ]  a91e5bc8-c394-406b-b7a0-e85deb236f74:发送成功.
+2018-01-11 12:05:09  [ AMQP Connection 116.62.173.111:5672:11194 ] - [ WARN ]  26833962-73c0-414e-af9a-9879c91c7304:发送成功.
+2018-01-11 12:05:09  [ AMQP Connection 116.62.173.111:5672:11249 ] - [ WARN ]  d6108f27-db91-4d79-b55d-1caf8d8bdc53:发送成功.
+2018-01-11 12:05:09  [ AMQP Connection 116.62.173.111:5672:11289 ] - [ WARN ]  dbde4fd1-1de1-4d12-893d-bbed64ebac32:发送成功.
+2018-01-11 12:05:09  [ AMQP Connection 116.62.173.111:5672:11332 ] - [ WARN ]  325a472b-bc0d-4198-8218-97c88446d1ea:发送成功.
+2018-01-11 12:05:09  [ AMQP Connection 116.62.173.111:5672:11375 ] - [ WARN ]  74247140-985e-43c5-9c5c-f7a6d754aaf8:发送成功.
+2018-01-11 12:05:09  [ AMQP Connection 116.62.173.111:5672:11430 ] - [ WARN ]  7ba2cb5c-a7ed-43ec-9d6f-c99f6882985e:发送成功.
+2018-01-11 12:05:10  [ AMQP Connection 116.62.173.111:5672:12012 ] - [ WARN ]  426a5586-3f88-4142-8840-c7a4b8bff7f9:发送成功.
+2018-01-11 12:05:10  [ AMQP Connection 116.62.173.111:5672:12068 ] - [ WARN ]  6b103610-e563-4392-9fb0-a51e84965699:发送成功.
+2018-01-11 12:05:10  [ AMQP Connection 116.62.173.111:5672:12117 ] - [ WARN ]  7d068a12-0dac-4c7e-9d9b-0a1adbfdbd94:发送成功.
+2018-01-11 12:05:10  [ AMQP Connection 116.62.173.111:5672:12149 ] - [ WARN ]  b776c129-334a-4c3b-8e33-38db112e3fca:发送成功.
+2018-01-11 12:05:10  [ AMQP Connection 116.62.173.111:5672:12203 ] - [ WARN ]  3424d9cc-34b8-4ac4-b371-926fd73cb256:发送成功.
+2018-01-11 12:05:10  [ AMQP Connection 116.62.173.111:5672:12243 ] - [ WARN ]  2e4d4922-2d2e-4706-ad6e-8e75abca7f23:发送成功.
+2018-01-11 12:05:10  [ AMQP Connection 116.62.173.111:5672:12295 ] - [ WARN ]  17ec079d-a4f5-46af-89ea-3b27c788f5d5:发送成功.
+2018-01-11 12:05:10  [ AMQP Connection 116.62.173.111:5672:12333 ] - [ WARN ]  7c4a5790-8e46-4746-b9aa-9d878fe666d3:发送成功.
+2018-01-11 12:05:10  [ AMQP Connection 116.62.173.111:5672:12385 ] - [ WARN ]  7f705a57-bb93-4c19-b605-40865e2af08c:发送成功.
+2018-01-11 12:05:10  [ AMQP Connection 116.62.173.111:5672:12423 ] - [ WARN ]  08d5fa0b-3321-4834-af37-702eafd78937:发送成功.
+2018-01-11 12:05:11  [ AMQP Connection 116.62.173.111:5672:13018 ] - [ WARN ]  ba960497-06b6-4815-9596-f06826444995:发送成功.
+2018-01-11 12:05:11  [ AMQP Connection 116.62.173.111:5672:13059 ] - [ WARN ]  dedf40db-ee00-4ede-817c-8306110c44e6:发送成功.
+2018-01-11 12:05:11  [ AMQP Connection 116.62.173.111:5672:13108 ] - [ WARN ]  cfcae1dc-0c40-4d47-9ae6-b051a5a50fd6:发送成功.
+2018-01-11 12:05:11  [ AMQP Connection 116.62.173.111:5672:13151 ] - [ WARN ]  487418ce-460f-4785-8ee4-8d579c3e594a:发送成功.
+2018-01-11 12:05:11  [ AMQP Connection 116.62.173.111:5672:13196 ] - [ WARN ]  3a31a1cd-b54b-43fd-94cf-4617d3b44f2e:发送成功.
+2018-01-11 12:05:11  [ AMQP Connection 116.62.173.111:5672:13245 ] - [ WARN ]  b5623e84-d30b-48e3-b9cc-98cbc97f0230:发送成功.
+2018-01-11 12:05:11  [ AMQP Connection 116.62.173.111:5672:13297 ] - [ WARN ]  e9d14a54-3595-4190-85d1-99a5c22d22d8:发送成功.
+2018-01-11 12:05:11  [ AMQP Connection 116.62.173.111:5672:13337 ] - [ WARN ]  22c7c3dd-4ca4-4397-86a3-8d9e1c2f182c:发送成功.
+2018-01-11 12:05:11  [ AMQP Connection 116.62.173.111:5672:13379 ] - [ WARN ]  07a30ab8-b243-45bb-ba00-340c3993ef81:发送成功.
+2018-01-11 12:05:11  [ AMQP Connection 116.62.173.111:5672:13430 ] - [ WARN ]  2c0c63ea-460e-470c-94f7-f2fdc98ac444:发送成功.
+2018-01-11 12:05:12  [ AMQP Connection 116.62.173.111:5672:14013 ] - [ WARN ]  95f7b998-4d4a-4a48-8b26-7a56c87d9c10:发送成功.
+2018-01-11 12:05:12  [ AMQP Connection 116.62.173.111:5672:14065 ] - [ WARN ]  c67cff8f-c54c-4d8f-9de3-c1832f8f764e:发送成功.
+2018-01-11 12:05:12  [ AMQP Connection 116.62.173.111:5672:14116 ] - [ WARN ]  8eff2d83-df8e-4767-a4b6-c3b748739e3c:发送成功.
+2018-01-11 12:05:12  [ AMQP Connection 116.62.173.111:5672:14152 ] - [ WARN ]  3bbeade5-4518-4da4-bbed-69772cdde158:发送成功.
+2018-01-11 12:05:12  [ AMQP Connection 116.62.173.111:5672:14204 ] - [ WARN ]  876f2faa-3510-473a-a619-9b8c45334361:发送成功.
+2018-01-11 12:05:12  [ AMQP Connection 116.62.173.111:5672:14242 ] - [ WARN ]  60685e3d-8ecb-41ec-9f1b-4364807413ab:发送成功.
+2018-01-11 12:05:12  [ AMQP Connection 116.62.173.111:5672:14290 ] - [ WARN ]  438fec48-dd45-4e78-80ed-ba458067157d:发送成功.
+2018-01-11 12:05:12  [ AMQP Connection 116.62.173.111:5672:14333 ] - [ WARN ]  e01c06f7-079b-4d21-8567-ffb19010867d:发送成功.
+2018-01-11 12:05:12  [ AMQP Connection 116.62.173.111:5672:14391 ] - [ WARN ]  0f3f17a3-5215-4bee-9300-9068c2273db5:发送成功.
+2018-01-11 12:05:12  [ AMQP Connection 116.62.173.111:5672:14434 ] - [ WARN ]  554a1524-9ff7-4ce0-8238-f5b6bd7bc468:发送成功.
+2018-01-11 12:05:13  [ AMQP Connection 116.62.173.111:5672:15016 ] - [ WARN ]  3cb0fb82-25c0-4859-9870-7b4f829182a4:发送成功.
+2018-01-11 12:05:13  [ AMQP Connection 116.62.173.111:5672:15064 ] - [ WARN ]  e6c28223-50bd-4feb-b137-be7ed422b1d8:发送成功.
+2018-01-11 12:05:13  [ AMQP Connection 116.62.173.111:5672:15112 ] - [ WARN ]  3a11b3a3-f585-4c34-9223-bad33e7104a0:发送成功.
+2018-01-11 12:05:13  [ AMQP Connection 116.62.173.111:5672:15158 ] - [ WARN ]  ae003b9c-a74a-4914-8e08-520e646636d5:发送成功.
+2018-01-11 12:05:13  [ AMQP Connection 116.62.173.111:5672:15207 ] - [ WARN ]  198c708b-fe38-49ca-983e-76d1fc69f2cd:发送成功.
+2018-01-11 12:05:13  [ AMQP Connection 116.62.173.111:5672:15246 ] - [ WARN ]  104ae776-8913-4705-8d0d-5118469ca775:发送成功.
+2018-01-11 12:05:13  [ AMQP Connection 116.62.173.111:5672:15300 ] - [ WARN ]  4d56ed0b-8808-4176-8fb9-e31a23d3580d:发送成功.
+2018-01-11 12:05:13  [ AMQP Connection 116.62.173.111:5672:15342 ] - [ WARN ]  38ef186f-826f-43ad-911c-aec7d2badfad:发送成功.
+2018-01-11 12:05:13  [ AMQP Connection 116.62.173.111:5672:15389 ] - [ WARN ]  f35ac027-25d5-4228-b3c7-d1f3417245e8:发送成功.
+2018-01-11 12:05:13  [ AMQP Connection 116.62.173.111:5672:15427 ] - [ WARN ]  63c2df45-6718-438a-a4b2-446960d58b39:发送成功.
+2018-01-11 12:05:14  [ AMQP Connection 116.62.173.111:5672:16022 ] - [ WARN ]  66540881-ef14-4916-8ebd-588ba8db68d3:发送成功.
+2018-01-11 12:05:14  [ AMQP Connection 116.62.173.111:5672:16069 ] - [ WARN ]  d7102390-8946-4828-8255-026d81b40491:发送成功.
+2018-01-11 12:05:14  [ AMQP Connection 116.62.173.111:5672:16113 ] - [ WARN ]  14c27ef3-595d-42a6-a1d4-14ba5643ecdb:发送成功.
+2018-01-11 12:05:14  [ AMQP Connection 116.62.173.111:5672:16152 ] - [ WARN ]  864536c5-ca6c-4331-a77d-a9328b04f7c8:发送成功.
+2018-01-11 12:05:14  [ AMQP Connection 116.62.173.111:5672:16202 ] - [ WARN ]  a0487b5a-f871-409e-b18e-2b93d005418c:发送成功.
+2018-01-11 12:05:14  [ AMQP Connection 116.62.173.111:5672:16255 ] - [ WARN ]  1037e346-6794-4480-b6dc-5407fa0da3bc:发送成功.
+2018-01-11 12:05:14  [ AMQP Connection 116.62.173.111:5672:16293 ] - [ WARN ]  ea26a184-c053-4272-8cc1-d00d21261e9d:发送成功.
+2018-01-11 12:05:14  [ AMQP Connection 116.62.173.111:5672:16336 ] - [ WARN ]  d5898e3b-c4f2-4ff4-a1a9-b56a8eeaac7f:发送成功.
+2018-01-11 12:05:14  [ AMQP Connection 116.62.173.111:5672:16391 ] - [ WARN ]  aedea0df-dc28-45b1-88c0-8990d995bd6e:发送成功.
+2018-01-11 12:05:14  [ AMQP Connection 116.62.173.111:5672:16427 ] - [ WARN ]  1fb2da24-0a24-4bba-8e85-4d7b5dfdc8a9:发送成功.
+2018-01-11 12:05:15  [ AMQP Connection 116.62.173.111:5672:17018 ] - [ WARN ]  f82df61c-befd-4241-82d2-693f1289956f:发送成功.
+2018-01-11 12:05:15  [ AMQP Connection 116.62.173.111:5672:17062 ] - [ WARN ]  e473e84a-5c30-487c-b9b2-f2d02a2b59ac:发送成功.
+2018-01-11 12:05:15  [ AMQP Connection 116.62.173.111:5672:17115 ] - [ WARN ]  85dabe5f-7877-4743-a234-641938794029:发送成功.
+2018-01-11 12:05:15  [ AMQP Connection 116.62.173.111:5672:17153 ] - [ WARN ]  494a1ce4-3f76-49ba-b757-8a9e0d05b68d:发送成功.
+2018-01-11 12:05:15  [ AMQP Connection 116.62.173.111:5672:17206 ] - [ WARN ]  3b7aed3c-b4ec-4819-8943-e942448b004a:发送成功.
+2018-01-11 12:05:15  [ AMQP Connection 116.62.173.111:5672:17255 ] - [ WARN ]  62dcf4e0-9beb-48fc-9b76-fe7fe17c0eb4:发送成功.
+2018-01-11 12:05:15  [ AMQP Connection 116.62.173.111:5672:17302 ] - [ WARN ]  b1530950-276f-425f-b99d-89130aabdfaa:发送成功.
+2018-01-11 12:05:15  [ AMQP Connection 116.62.173.111:5672:17345 ] - [ WARN ]  e179ff96-22ea-4e6a-af3a-1c21fb7f0eb9:发送成功.
+2018-01-11 12:05:15  [ AMQP Connection 116.62.173.111:5672:17389 ] - [ WARN ]  eb08ee53-ebbc-42a9-b8eb-fe323db3ba2e:发送成功.
+2018-01-11 12:05:15  [ AMQP Connection 116.62.173.111:5672:17432 ] - [ WARN ]  f4813df8-04be-49e5-b09c-3e2061b0bcd6:发送成功.
+2018-01-11 12:05:16  [ AMQP Connection 116.62.173.111:5672:18025 ] - [ WARN ]  a2cc377d-8b8c-49ba-9ee4-6d962cf994b5:发送成功.
+2018-01-11 12:05:16  [ AMQP Connection 116.62.173.111:5672:18062 ] - [ WARN ]  297e0f85-29bf-490d-9b38-3e73d693b9ae:发送成功.
+2018-01-11 12:05:16  [ AMQP Connection 116.62.173.111:5672:18113 ] - [ WARN ]  d6838847-b8dd-4c2a-9110-b5b7ed5a7ae5:发送成功.
+2018-01-11 12:05:16  [ AMQP Connection 116.62.173.111:5672:18154 ] - [ WARN ]  40e33203-07e2-44ee-a84f-2bb58c9b8e95:发送成功.
+2018-01-11 12:05:16  [ AMQP Connection 116.62.173.111:5672:18205 ] - [ WARN ]  47f74561-4015-4171-85f2-adb684407eeb:发送成功.
+2018-01-11 12:05:16  [ AMQP Connection 116.62.173.111:5672:18254 ] - [ WARN ]  eb9c05c8-a3ff-40d0-b8eb-70b4f3542b42:发送成功.
+2018-01-11 12:05:16  [ AMQP Connection 116.62.173.111:5672:18291 ] - [ WARN ]  670046e4-eaae-45a1-9d9a-8d575ecf6518:发送成功.
+2018-01-11 12:05:16  [ AMQP Connection 116.62.173.111:5672:18338 ] - [ WARN ]  6daf6354-08b2-426a-bada-d7cd0fd91fc5:发送成功.
+2018-01-11 12:05:16  [ AMQP Connection 116.62.173.111:5672:18390 ] - [ WARN ]  1df450d2-f4cc-4908-a48c-107e6efeaae3:发送成功.
+2018-01-11 12:05:16  [ AMQP Connection 116.62.173.111:5672:18433 ] - [ WARN ]  b1217957-5c8f-4ce5-9e9a-4c0ed130f318:发送成功.
+2018-01-11 12:05:16  [ ConcurrentTestTools-thread-6:18945 ] - [ INFO ]  ConcurrentTestTools-thread-6 execute finshed.
+2018-01-11 12:05:16  [ ConcurrentTestTools-thread-2:18946 ] - [ INFO ]  ConcurrentTestTools-thread-2 execute finshed.
+2018-01-11 12:05:16  [ ConcurrentTestTools-thread-7:18946 ] - [ INFO ]  ConcurrentTestTools-thread-7 execute finshed.
+2018-01-11 12:05:16  [ ConcurrentTestTools-thread-0:18947 ] - [ INFO ]  ConcurrentTestTools-thread-0 execute finshed.
+2018-01-11 12:05:16  [ ConcurrentTestTools-thread-3:18948 ] - [ INFO ]  ConcurrentTestTools-thread-3 execute finshed.
+2018-01-11 12:05:17  [ ConcurrentTestTools-thread-5:18980 ] - [ INFO ]  ConcurrentTestTools-thread-5 execute finshed.
+2018-01-11 12:05:17  [ ConcurrentTestTools-thread-9:19016 ] - [ INFO ]  ConcurrentTestTools-thread-9 execute finshed.
+2018-01-11 12:05:17  [ AMQP Connection 116.62.173.111:5672:19026 ] - [ WARN ]  768ebf87-0d55-434c-9460-e2eca2e63609:发送成功.
+2018-01-11 12:05:17  [ ConcurrentTestTools-thread-4:19065 ] - [ INFO ]  ConcurrentTestTools-thread-4 execute finshed.
+2018-01-11 12:05:17  [ AMQP Connection 116.62.173.111:5672:19065 ] - [ WARN ]  e1175359-29c1-4654-8b09-260a4b78edaf:发送成功.
+2018-01-11 12:05:17  [ ConcurrentTestTools-thread-1:19109 ] - [ INFO ]  ConcurrentTestTools-thread-1 execute finshed.
+2018-01-11 12:05:17  [ AMQP Connection 116.62.173.111:5672:19121 ] - [ WARN ]  5a909c7c-eaf6-40c1-b611-dc3eb13dd564:发送成功.
+2018-01-11 12:05:17  [ ConcurrentTestTools-thread-8:19155 ] - [ INFO ]  ConcurrentTestTools-thread-8 execute finshed.
+2018-01-11 12:05:17  [ AMQP Connection 116.62.173.111:5672:19163 ] - [ WARN ]  9554b35c-18a8-4fff-9b1b-e5f72886c6c7:发送成功.
+2018-01-11 12:05:17  [ Thread-3:19166 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 12:04:59 CST 2018]; root of context hierarchy
+2018-01-11 12:05:17  [ Thread-3:19168 ] - [ INFO ]  Stopping beans in phase 2147483647
+2018-01-11 12:05:17  [ AMQP Connection 116.62.173.111:5672:19202 ] - [ WARN ]  c79cc596-8ac4-495c-bf54-3979c534a5b0:发送成功.
+2018-01-11 12:05:17  [ Thread-3:19211 ] - [ INFO ]  Waiting for workers to finish.
+2018-01-11 12:05:17  [ AMQP Connection 116.62.173.111:5672:19247 ] - [ WARN ]  b99c7f29-eb9d-4f5d-af21-d733d87cc084:发送成功.
+2018-01-11 12:05:17  [ AMQP Connection 116.62.173.111:5672:19304 ] - [ WARN ]  e10a9a10-6eb6-4828-8d1b-4a27dcaa5902:发送成功.
+2018-01-11 12:05:17  [ AMQP Connection 116.62.173.111:5672:19346 ] - [ WARN ]  96c52c53-bea2-43b1-ad94-fc072b415470:发送成功.
+2018-01-11 12:05:17  [ AMQP Connection 116.62.173.111:5672:19391 ] - [ WARN ]  ffe2c2f4-76a7-4938-8787-d83da5842739:发送成功.
+2018-01-11 12:05:17  [ AMQP Connection 116.62.173.111:5672:19443 ] - [ WARN ]  7b720479-d9a0-4c07-bbe7-8cd4f193407e:发送成功.
+2018-01-11 12:05:17  [ Thread-3:19556 ] - [ INFO ]  Successfully waited for workers to finish.
+2018-01-11 13:06:18  [ main:49 ] - [ INFO ]  Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nettyBio.BillNumTest], using SpringBootContextLoader
+2018-01-11 13:06:18  [ main:55 ] - [ INFO ]  Could not detect default resource locations for test class [com.nettyBio.BillNumTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-11 13:06:18  [ main:132 ] - [ INFO ]  Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-11 13:06:18  [ main:160 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@8e24743, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@74a10858, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23fe1d71, org.springframework.test.context.transaction.TransactionalTestExecutionListener@28ac3dc3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32eebfca, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e718207, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d371b2d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@543c6f6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13eb8acf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@51c8530f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7403c468]
+2018-01-11 13:06:19  [ main:672 ] - [ INFO ]  Starting BillNumTest on lijin1586 with PID 17512 (started by invengo in D:\ideaSpace\springbootDemo)
+2018-01-11 13:06:19  [ main:675 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-01-11 13:06:19  [ main:923 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 13:06:19 CST 2018]; root of context hierarchy
+2018-01-11 13:06:19  [ background-preinit:1059 ] - [ INFO ]  HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 13:06:20  [ main:2030 ] - [ INFO ]  Overriding bean definition for bean 'defaultExchange' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpConsumerConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpConsumerConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpProviderConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpProviderConfig.class]]
+2018-01-11 13:06:20  [ main:2375 ] - [ INFO ]  Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-11 13:06:21  [ main:2997 ] - [ INFO ]  Bean 'mybatisConfig' of type [com.ivg.demo.config.MybatisConfig$$EnhancerBySpringCGLIB$$458d8142] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:06:21  [ main:3295 ] - [ INFO ]  Bean 'dataSource' of type [org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:06:21  [ main:3461 ] - [ INFO ]  Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:06:21  [ main:3469 ] - [ INFO ]  Bean 'storeOutBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:06:21  [ main:3471 ] - [ INFO ]  Bean 'storeInBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:06:21  [ main:3473 ] - [ INFO ]  Bean 'storeInBillExMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:06:21  [ main:3503 ] - [ INFO ]  Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$639ff018] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:06:22  [ main:3875 ] - [ INFO ]  JedisConnectionFactory bean init success.
+2018-01-11 13:06:23  [ main:4764 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 13:06:19 CST 2018]; root of context hierarchy
+2018-01-11 13:06:23  [ main:4851 ] - [ INFO ]  Mapped "{[/inbill/getInBill]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.getInBillBySupplierCode(java.lang.String)
+2018-01-11 13:06:23  [ main:4852 ] - [ INFO ]  Mapped "{[/inbill/findInBillAll]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.findInBill()
+2018-01-11 13:06:23  [ main:4853 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 13:06:23  [ main:4854 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 13:06:23  [ main:4911 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:06:23  [ main:4911 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:06:23  [ main:4968 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:06:24  [ main:5823 ] - [ INFO ]  Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:06:24  [ main:5823 ] - [ INFO ]  Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:06:24  [ main:5824 ] - [ INFO ]  Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:06:24  [ main:5825 ] - [ INFO ]  Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-01-11 13:06:24  [ main:5825 ] - [ INFO ]  Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-01-11 13:06:24  [ main:5825 ] - [ INFO ]  Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:06:24  [ main:5827 ] - [ INFO ]  Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:06:24  [ main:5828 ] - [ INFO ]  Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:06:24  [ main:5828 ] - [ INFO ]  Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-01-11 13:06:24  [ main:5829 ] - [ INFO ]  Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:06:24  [ main:5829 ] - [ INFO ]  Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-01-11 13:06:24  [ main:5832 ] - [ INFO ]  Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:06:24  [ main:5833 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-01-11 13:06:24  [ main:5834 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-01-11 13:06:24  [ main:5834 ] - [ INFO ]  Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:06:24  [ main:5834 ] - [ INFO ]  Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-01-11 13:06:24  [ main:5835 ] - [ INFO ]  Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:06:24  [ main:6192 ] - [ INFO ]  Starting beans in phase 2147483647
+2018-01-11 13:06:24  [ messageContainer-1:6416 ] - [ INFO ]  Created new connection: mqConnectionFactory#9351766:0/SimpleConnection@37bbe09f [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 62254]
+2018-01-11 13:06:25  [ main:6659 ] - [ INFO ]  Started BillNumTest in 6.355 seconds (JVM running for 7.186)
+2018-01-11 13:06:25  [ ConcurrentTestTools-thread-0:6711 ] - [ INFO ]  ConcurrentTestTools-thread-0 init finshed.
+2018-01-11 13:06:25  [ ConcurrentTestTools-thread-1:6711 ] - [ INFO ]  ConcurrentTestTools-thread-1 init finshed.
+2018-01-11 13:06:25  [ ConcurrentTestTools-thread-9:6712 ] - [ INFO ]  ConcurrentTestTools-thread-9 init finshed.
+2018-01-11 13:06:25  [ ConcurrentTestTools-thread-7:6712 ] - [ INFO ]  ConcurrentTestTools-thread-7 init finshed.
+2018-01-11 13:06:25  [ ConcurrentTestTools-thread-5:6712 ] - [ INFO ]  ConcurrentTestTools-thread-5 init finshed.
+2018-01-11 13:06:25  [ ConcurrentTestTools-thread-6:6712 ] - [ INFO ]  ConcurrentTestTools-thread-6 init finshed.
+2018-01-11 13:06:25  [ ConcurrentTestTools-thread-4:6712 ] - [ INFO ]  ConcurrentTestTools-thread-4 init finshed.
+2018-01-11 13:06:25  [ ConcurrentTestTools-thread-3:6712 ] - [ INFO ]  ConcurrentTestTools-thread-3 init finshed.
+2018-01-11 13:06:25  [ ConcurrentTestTools-thread-2:6712 ] - [ INFO ]  ConcurrentTestTools-thread-2 init finshed.
+2018-01-11 13:06:25  [ ConcurrentTestTools-thread-8:6712 ] - [ INFO ]  ConcurrentTestTools-thread-8 init finshed.
+2018-01-11 13:06:26  [ ConcurrentTestTools-thread-6:7875 ] - [ INFO ]  Created new connection: connectionFactory#16b5a7f4:0/SimpleConnection@5788adcf [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 62255]
+2018-01-11 13:06:26  [ AMQP Connection 116.62.173.111:5672:8089 ] - [ WARN ]  01ad1645-e5cf-460f-821d-fa3ae78e0729:发送成功.
+2018-01-11 13:06:26  [ AMQP Connection 116.62.173.111:5672:8127 ] - [ WARN ]  e6d7eed9-c3fa-4849-9bcc-b05a48e7625e:发送成功.
+2018-01-11 13:06:26  [ AMQP Connection 116.62.173.111:5672:8159 ] - [ WARN ]  51cf6eef-5432-4c24-b4eb-12116e18c225:发送成功.
+2018-01-11 13:06:26  [ AMQP Connection 116.62.173.111:5672:8206 ] - [ WARN ]  e9bd88b5-985a-489e-b87d-2f3b138a92cb:发送成功.
+2018-01-11 13:06:26  [ AMQP Connection 116.62.173.111:5672:8250 ] - [ WARN ]  8f01b661-758b-49f6-9835-44712657dac7:发送成功.
+2018-01-11 13:06:26  [ AMQP Connection 116.62.173.111:5672:8300 ] - [ WARN ]  65d73ce5-7f80-4ab9-92d9-2978b4a68b90:发送成功.
+2018-01-11 13:06:26  [ AMQP Connection 116.62.173.111:5672:8340 ] - [ WARN ]  b1acb978-d9f2-491e-ae13-628d8d3fd766:发送成功.
+2018-01-11 13:06:26  [ AMQP Connection 116.62.173.111:5672:8386 ] - [ WARN ]  17a33056-d278-4811-95ec-1107324d6fc0:发送成功.
+2018-01-11 13:06:26  [ AMQP Connection 116.62.173.111:5672:8441 ] - [ WARN ]  422fbdd7-bc32-4409-9ead-9ffc24483194:发送成功.
+2018-01-11 13:06:26  [ AMQP Connection 116.62.173.111:5672:8502 ] - [ WARN ]  523dcb93-a119-4a7d-9b1a-113b7e961897:发送成功.
+2018-01-11 13:06:27  [ AMQP Connection 116.62.173.111:5672:9083 ] - [ WARN ]  b085a8d9-b2fa-4580-85d2-960b22e151de:发送成功.
+2018-01-11 13:06:27  [ AMQP Connection 116.62.173.111:5672:9127 ] - [ WARN ]  25fbf2d3-e591-4d73-ba16-452542d68506:发送成功.
+2018-01-11 13:06:27  [ AMQP Connection 116.62.173.111:5672:9170 ] - [ WARN ]  dc30068a-c4a0-4f76-9a9e-fd0476e3a03d:发送成功.
+2018-01-11 13:06:27  [ AMQP Connection 116.62.173.111:5672:9209 ] - [ WARN ]  1e710907-0f8c-44f2-97cd-15a95522bbd1:发送成功.
+2018-01-11 13:06:27  [ AMQP Connection 116.62.173.111:5672:9252 ] - [ WARN ]  1473a523-dac4-4ded-857c-ccf17b98c343:发送成功.
+2018-01-11 13:06:27  [ AMQP Connection 116.62.173.111:5672:9301 ] - [ WARN ]  3844966c-27ac-43f4-9f3a-15540168d9ef:发送成功.
+2018-01-11 13:06:27  [ AMQP Connection 116.62.173.111:5672:9348 ] - [ WARN ]  c5740d14-e261-406b-8ec1-21c5a936d404:发送成功.
+2018-01-11 13:06:27  [ AMQP Connection 116.62.173.111:5672:9413 ] - [ WARN ]  66247400-0f49-4177-b7fd-6f0d8aa71e6f:发送成功.
+2018-01-11 13:06:27  [ AMQP Connection 116.62.173.111:5672:9453 ] - [ WARN ]  01de04ac-ca78-4d3a-aa43-d1067df6fb96:发送成功.
+2018-01-11 13:06:27  [ AMQP Connection 116.62.173.111:5672:9506 ] - [ WARN ]  2cdca6e8-38fd-4021-b021-7188000bdc96:发送成功.
+2018-01-11 13:06:28  [ AMQP Connection 116.62.173.111:5672:10077 ] - [ WARN ]  fd34ba6f-202b-45f7-8139-c47565ebe3bb:发送成功.
+2018-01-11 13:06:28  [ AMQP Connection 116.62.173.111:5672:10123 ] - [ WARN ]  b5449fe2-3f31-43ec-a844-d0558e2ce1c0:发送成功.
+2018-01-11 13:06:28  [ AMQP Connection 116.62.173.111:5672:10166 ] - [ WARN ]  f4257c83-04e2-4db1-9150-6996268d40ee:发送成功.
+2018-01-11 13:06:28  [ AMQP Connection 116.62.173.111:5672:10222 ] - [ WARN ]  361c7e14-543e-4889-b2b5-8cc9aee2f4a0:发送成功.
+2018-01-11 13:06:28  [ AMQP Connection 116.62.173.111:5672:10296 ] - [ WARN ]  b4e96712-92a8-4021-98c9-7dc922bc3f2d:发送成功.
+2018-01-11 13:06:28  [ AMQP Connection 116.62.173.111:5672:10328 ] - [ WARN ]  28f0ea60-5298-4736-bfd2-32d3c02719ed:发送成功.
+2018-01-11 13:06:28  [ AMQP Connection 116.62.173.111:5672:10341 ] - [ WARN ]  32d7cabc-6841-42fa-9692-0baaf546257e:发送成功.
+2018-01-11 13:06:28  [ AMQP Connection 116.62.173.111:5672:10391 ] - [ WARN ]  0ffd46d8-d841-4794-9c44-6780fb670100:发送成功.
+2018-01-11 13:06:28  [ AMQP Connection 116.62.173.111:5672:10437 ] - [ WARN ]  1dde385b-b3f4-44cb-97f4-baf0ea336b6e:发送成功.
+2018-01-11 13:06:28  [ AMQP Connection 116.62.173.111:5672:10498 ] - [ WARN ]  77a52de9-fb16-4636-8bc4-c312572b3954:发送成功.
+2018-01-11 13:06:29  [ AMQP Connection 116.62.173.111:5672:11077 ] - [ WARN ]  13fb9f4a-16a0-4e04-8961-b4b00a5afafb:发送成功.
+2018-01-11 13:06:29  [ AMQP Connection 116.62.173.111:5672:11118 ] - [ WARN ]  8e00ecce-9f02-4b2a-93e6-1c0996592077:发送成功.
+2018-01-11 13:06:29  [ AMQP Connection 116.62.173.111:5672:11175 ] - [ WARN ]  9a4faace-2ae9-412a-8290-ab10a2cbf732:发送成功.
+2018-01-11 13:06:29  [ AMQP Connection 116.62.173.111:5672:11221 ] - [ WARN ]  acef356c-5ea7-4de5-b1a4-865cebb4d32c:发送成功.
+2018-01-11 13:06:29  [ AMQP Connection 116.62.173.111:5672:11265 ] - [ WARN ]  d542e4a6-f8d0-4682-a304-1e1289b84528:发送成功.
+2018-01-11 13:06:29  [ AMQP Connection 116.62.173.111:5672:11306 ] - [ WARN ]  82586e77-3b6f-4074-8779-142b5c5af7a8:发送成功.
+2018-01-11 13:06:29  [ AMQP Connection 116.62.173.111:5672:11370 ] - [ WARN ]  3fd7409b-0db6-4fe5-a430-b93ca0bc8499:发送成功.
+2018-01-11 13:06:29  [ AMQP Connection 116.62.173.111:5672:11419 ] - [ WARN ]  60646ff9-ddce-4ed0-988c-ec756bb34e1e:发送成功.
+2018-01-11 13:06:29  [ AMQP Connection 116.62.173.111:5672:11459 ] - [ WARN ]  5eace5a5-8bf1-4a2c-8d01-b8ced5444d52:发送成功.
+2018-01-11 13:06:29  [ AMQP Connection 116.62.173.111:5672:11495 ] - [ WARN ]  b0b629c9-75ad-4d0f-b458-2dd293c493c8:发送成功.
+2018-01-11 13:06:30  [ ConcurrentTestTools-thread-0:11978 ] - [ INFO ]  ConcurrentTestTools-thread-0 execute finshed.
+2018-01-11 13:06:30  [ ConcurrentTestTools-thread-3:11979 ] - [ INFO ]  ConcurrentTestTools-thread-3 execute finshed.
+2018-01-11 13:06:30  [ ConcurrentTestTools-thread-7:11979 ] - [ INFO ]  ConcurrentTestTools-thread-7 execute finshed.
+2018-01-11 13:06:30  [ ConcurrentTestTools-thread-2:11979 ] - [ INFO ]  ConcurrentTestTools-thread-2 execute finshed.
+2018-01-11 13:06:30  [ ConcurrentTestTools-thread-9:11979 ] - [ INFO ]  ConcurrentTestTools-thread-9 execute finshed.
+2018-01-11 13:06:30  [ ConcurrentTestTools-thread-8:12008 ] - [ INFO ]  ConcurrentTestTools-thread-8 execute finshed.
+2018-01-11 13:06:30  [ ConcurrentTestTools-thread-6:12049 ] - [ INFO ]  ConcurrentTestTools-thread-6 execute finshed.
+2018-01-11 13:06:30  [ AMQP Connection 116.62.173.111:5672:12083 ] - [ WARN ]  a79241b7-be45-4822-b1ee-65d1ed0751a3:发送成功.
+2018-01-11 13:06:30  [ ConcurrentTestTools-thread-4:12120 ] - [ INFO ]  ConcurrentTestTools-thread-4 execute finshed.
+2018-01-11 13:06:30  [ AMQP Connection 116.62.173.111:5672:12125 ] - [ WARN ]  3dfb30ed-0318-4515-81ed-52aca9e552af:发送成功.
+2018-01-11 13:06:30  [ ConcurrentTestTools-thread-5:12149 ] - [ INFO ]  ConcurrentTestTools-thread-5 execute finshed.
+2018-01-11 13:06:30  [ AMQP Connection 116.62.173.111:5672:12166 ] - [ WARN ]  c6219795-18ee-4899-84c3-43aa3bbe6ba6:发送成功.
+2018-01-11 13:06:30  [ ConcurrentTestTools-thread-1:12199 ] - [ INFO ]  ConcurrentTestTools-thread-1 execute finshed.
+2018-01-11 13:06:30  [ Thread-3:12209 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 13:06:19 CST 2018]; root of context hierarchy
+2018-01-11 13:06:30  [ Thread-3:12210 ] - [ INFO ]  Stopping beans in phase 2147483647
+2018-01-11 13:06:30  [ AMQP Connection 116.62.173.111:5672:12211 ] - [ WARN ]  d828dd29-6768-40d1-8756-c43537f9a38e:发送成功.
+2018-01-11 13:06:30  [ AMQP Connection 116.62.173.111:5672:12269 ] - [ WARN ]  2f7d900d-3c92-4ce6-8d70-069514fc381d:发送成功.
+2018-01-11 13:06:30  [ Thread-3:12272 ] - [ INFO ]  Waiting for workers to finish.
+2018-01-11 13:06:30  [ Thread-3:12277 ] - [ INFO ]  Successfully waited for workers to finish.
+2018-01-11 13:06:30  [ AMQP Connection 116.62.173.111:5672:12315 ] - [ WARN ]  097fdd2e-3f69-4222-baa3-edf8b886b0a0:发送成功.
+2018-01-11 13:06:30  [ AMQP Connection 116.62.173.111:5672:12343 ] - [ WARN ]  8340d8ad-0f27-4cc7-8edb-0e168b578178:发送成功.
+2018-01-11 13:06:30  [ AMQP Connection 116.62.173.111:5672:12399 ] - [ WARN ]  0a9c5048-5833-48bf-955e-69e17168ee67:发送成功.
+2018-01-11 13:06:30  [ AMQP Connection 116.62.173.111:5672:12442 ] - [ WARN ]  768ef2de-e3a6-41c2-91a3-d2cc7640cb62:发送成功.
+2018-01-11 13:06:30  [ AMQP Connection 116.62.173.111:5672:12512 ] - [ WARN ]  51258b27-4960-4d7e-a547-fc72b9536a81:发送成功.
+2018-01-11 13:19:45  [ main:50 ] - [ INFO ]  Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nettyBio.BillNumTest], using SpringBootContextLoader
+2018-01-11 13:19:45  [ main:56 ] - [ INFO ]  Could not detect default resource locations for test class [com.nettyBio.BillNumTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-11 13:19:45  [ main:135 ] - [ INFO ]  Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-11 13:19:45  [ main:163 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@8e24743, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@74a10858, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23fe1d71, org.springframework.test.context.transaction.TransactionalTestExecutionListener@28ac3dc3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32eebfca, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e718207, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d371b2d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@543c6f6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13eb8acf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@51c8530f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7403c468]
+2018-01-11 13:19:46  [ main:693 ] - [ INFO ]  Starting BillNumTest on lijin1586 with PID 138460 (started by invengo in D:\ideaSpace\springbootDemo)
+2018-01-11 13:19:46  [ main:694 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-01-11 13:19:46  [ main:958 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 13:19:46 CST 2018]; root of context hierarchy
+2018-01-11 13:19:46  [ background-preinit:1080 ] - [ INFO ]  HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 13:19:47  [ main:1852 ] - [ INFO ]  Overriding bean definition for bean 'defaultExchange' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpConsumerConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpConsumerConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpProviderConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpProviderConfig.class]]
+2018-01-11 13:19:47  [ main:2117 ] - [ INFO ]  Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-11 13:19:48  [ main:2722 ] - [ INFO ]  Bean 'mybatisConfig' of type [com.ivg.demo.config.MybatisConfig$$EnhancerBySpringCGLIB$$547a7475] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:19:48  [ main:2974 ] - [ INFO ]  Bean 'dataSource' of type [org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:19:48  [ main:3143 ] - [ INFO ]  Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:19:48  [ main:3148 ] - [ INFO ]  Bean 'storeOutBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:19:48  [ main:3150 ] - [ INFO ]  Bean 'storeInBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:19:48  [ main:3152 ] - [ INFO ]  Bean 'storeInBillExMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:19:48  [ main:3186 ] - [ INFO ]  Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$728ce34b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:19:49  [ main:3549 ] - [ INFO ]  JedisConnectionFactory bean init success.
+2018-01-11 13:19:50  [ main:4492 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 13:19:46 CST 2018]; root of context hierarchy
+2018-01-11 13:19:50  [ main:4577 ] - [ INFO ]  Mapped "{[/inbill/findInBillAll]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.findInBill()
+2018-01-11 13:19:50  [ main:4578 ] - [ INFO ]  Mapped "{[/inbill/getInBill]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.getInBillBySupplierCode(java.lang.String)
+2018-01-11 13:19:50  [ main:4581 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 13:19:50  [ main:4581 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 13:19:50  [ main:4627 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:19:50  [ main:4627 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:19:50  [ main:4686 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:19:51  [ main:5459 ] - [ INFO ]  Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:19:51  [ main:5460 ] - [ INFO ]  Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:19:51  [ main:5461 ] - [ INFO ]  Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:19:51  [ main:5461 ] - [ INFO ]  Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:19:51  [ main:5463 ] - [ INFO ]  Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-01-11 13:19:51  [ main:5463 ] - [ INFO ]  Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:19:51  [ main:5463 ] - [ INFO ]  Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-01-11 13:19:51  [ main:5465 ] - [ INFO ]  Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-01-11 13:19:51  [ main:5467 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-01-11 13:19:51  [ main:5467 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-01-11 13:19:51  [ main:5467 ] - [ INFO ]  Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:19:51  [ main:5468 ] - [ INFO ]  Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:19:51  [ main:5470 ] - [ INFO ]  Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:19:51  [ main:5470 ] - [ INFO ]  Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-01-11 13:19:51  [ main:5471 ] - [ INFO ]  Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:19:51  [ main:5471 ] - [ INFO ]  Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-01-11 13:19:51  [ main:5471 ] - [ INFO ]  Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:19:51  [ main:5829 ] - [ INFO ]  Starting beans in phase 2147483647
+2018-01-11 13:19:51  [ messageContainer-1:6063 ] - [ INFO ]  Created new connection: mqConnectionFactory#4d1ebc4f:0/SimpleConnection@2abf6fb6 [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 62554]
+2018-01-11 13:19:51  [ main:6297 ] - [ INFO ]  Started BillNumTest in 5.997 seconds (JVM running for 6.848)
+2018-01-11 13:19:51  [ ConcurrentTestTools-thread-0:6354 ] - [ INFO ]  ConcurrentTestTools-thread-0 init finshed.
+2018-01-11 13:19:51  [ ConcurrentTestTools-thread-4:6354 ] - [ INFO ]  ConcurrentTestTools-thread-4 init finshed.
+2018-01-11 13:19:51  [ ConcurrentTestTools-thread-5:6354 ] - [ INFO ]  ConcurrentTestTools-thread-5 init finshed.
+2018-01-11 13:19:51  [ ConcurrentTestTools-thread-7:6355 ] - [ INFO ]  ConcurrentTestTools-thread-7 init finshed.
+2018-01-11 13:19:51  [ ConcurrentTestTools-thread-9:6355 ] - [ INFO ]  ConcurrentTestTools-thread-9 init finshed.
+2018-01-11 13:19:51  [ ConcurrentTestTools-thread-3:6354 ] - [ INFO ]  ConcurrentTestTools-thread-3 init finshed.
+2018-01-11 13:19:51  [ ConcurrentTestTools-thread-1:6354 ] - [ INFO ]  ConcurrentTestTools-thread-1 init finshed.
+2018-01-11 13:19:51  [ ConcurrentTestTools-thread-2:6354 ] - [ INFO ]  ConcurrentTestTools-thread-2 init finshed.
+2018-01-11 13:19:51  [ ConcurrentTestTools-thread-8:6355 ] - [ INFO ]  ConcurrentTestTools-thread-8 init finshed.
+2018-01-11 13:19:51  [ ConcurrentTestTools-thread-6:6354 ] - [ INFO ]  ConcurrentTestTools-thread-6 init finshed.
+2018-01-11 13:19:53  [ ConcurrentTestTools-thread-2:7505 ] - [ INFO ]  Created new connection: connectionFactory#6974e9a8:0/SimpleConnection@16477443 [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 62555]
+2018-01-11 13:19:53  [ AMQP Connection 116.62.173.111:5672:7684 ] - [ WARN ]  1a9325aa-9534-4198-a728-62a7e4718b3e:发送成功.
+2018-01-11 13:19:53  [ AMQP Connection 116.62.173.111:5672:7733 ] - [ WARN ]  0fcf78fa-86e3-4fdf-b8c0-5ef6f9eedad1:发送成功.
+2018-01-11 13:19:53  [ AMQP Connection 116.62.173.111:5672:7766 ] - [ WARN ]  19b7bdde-b3be-4237-a78b-b8d8011210ef:发送成功.
+2018-01-11 13:19:53  [ AMQP Connection 116.62.173.111:5672:7810 ] - [ WARN ]  832f02bd-2944-4bb9-b9d5-e028918073c8:发送成功.
+2018-01-11 13:19:53  [ AMQP Connection 116.62.173.111:5672:7858 ] - [ WARN ]  a6f53db0-8ad5-4121-a319-8acf05c2f817:发送成功.
+2018-01-11 13:19:53  [ AMQP Connection 116.62.173.111:5672:7921 ] - [ WARN ]  fad45cd4-68aa-4d9f-9724-1477a51fabb2:发送成功.
+2018-01-11 13:19:53  [ AMQP Connection 116.62.173.111:5672:7950 ] - [ WARN ]  991471a1-129a-4f00-a6f4-5f1cd4f9999f:发送成功.
+2018-01-11 13:19:53  [ AMQP Connection 116.62.173.111:5672:7993 ] - [ WARN ]  156f33fe-d8ce-4c94-ab9e-4ad86c5ed7db:发送成功.
+2018-01-11 13:19:53  [ AMQP Connection 116.62.173.111:5672:8037 ] - [ WARN ]  2667aadc-700b-490a-915b-8febb4d352c5:发送成功.
+2018-01-11 13:19:53  [ AMQP Connection 116.62.173.111:5672:8086 ] - [ WARN ]  97dfe2ab-052d-477c-be93-b5fe0483b10a:发送成功.
+2018-01-11 13:19:54  [ AMQP Connection 116.62.173.111:5672:8678 ] - [ WARN ]  73ce61cf-a33b-41b7-b928-384add7c93f4:发送成功.
+2018-01-11 13:19:54  [ AMQP Connection 116.62.173.111:5672:8730 ] - [ WARN ]  3df3aa57-d522-4dc6-a1a2-4b8ce5abd136:发送成功.
+2018-01-11 13:19:54  [ AMQP Connection 116.62.173.111:5672:8770 ] - [ WARN ]  e3236505-28b6-4693-8b99-d308ddf6ff43:发送成功.
+2018-01-11 13:19:54  [ AMQP Connection 116.62.173.111:5672:8819 ] - [ WARN ]  6e5ad2ed-b3f7-490c-9d8e-826eb1827ea8:发送成功.
+2018-01-11 13:19:54  [ AMQP Connection 116.62.173.111:5672:8898 ] - [ WARN ]  edd675b1-5c76-428c-9759-b19d5bd2cf35:发送成功.
+2018-01-11 13:19:54  [ AMQP Connection 116.62.173.111:5672:8931 ] - [ WARN ]  8f79283f-1458-42fc-949e-ab20471bd21b:发送成功.
+2018-01-11 13:19:54  [ AMQP Connection 116.62.173.111:5672:8988 ] - [ WARN ]  d3e009f7-4d8a-47cf-acff-a8015fec4b21:发送成功.
+2018-01-11 13:19:54  [ AMQP Connection 116.62.173.111:5672:9005 ] - [ WARN ]  31c8cc0c-96be-400d-a77c-0bbe5c83ac7d:发送成功.
+2018-01-11 13:19:54  [ AMQP Connection 116.62.173.111:5672:9049 ] - [ WARN ]  50b621d0-d614-4b75-85ef-a0eb82c3b1cb:发送成功.
+2018-01-11 13:19:54  [ AMQP Connection 116.62.173.111:5672:9107 ] - [ WARN ]  39686955-dac0-42bb-b6eb-5e482ef419ac:发送成功.
+2018-01-11 13:19:55  [ AMQP Connection 116.62.173.111:5672:9684 ] - [ WARN ]  0e93f179-9465-451d-bbcf-f02806e2a315:发送成功.
+2018-01-11 13:19:55  [ AMQP Connection 116.62.173.111:5672:9734 ] - [ WARN ]  e4028477-d77c-46e3-8916-0cd6fbc89b36:发送成功.
+2018-01-11 13:19:55  [ AMQP Connection 116.62.173.111:5672:9783 ] - [ WARN ]  c7b719dd-83a1-422a-9bf3-683894ae970a:发送成功.
+2018-01-11 13:19:55  [ AMQP Connection 116.62.173.111:5672:9837 ] - [ WARN ]  4965d83a-6d82-4340-8c56-84be4591ce31:发送成功.
+2018-01-11 13:19:55  [ AMQP Connection 116.62.173.111:5672:9888 ] - [ WARN ]  adc5e77f-a5f3-49aa-a40c-80acfddb93c7:发送成功.
+2018-01-11 13:19:55  [ AMQP Connection 116.62.173.111:5672:9940 ] - [ WARN ]  69fb292a-9472-4330-8488-d1042013d0cc:发送成功.
+2018-01-11 13:19:55  [ AMQP Connection 116.62.173.111:5672:9974 ] - [ WARN ]  3738bc2b-d2dc-4370-9229-61e7888bb78a:发送成功.
+2018-01-11 13:19:55  [ AMQP Connection 116.62.173.111:5672:10002 ] - [ WARN ]  f1006074-7e50-4293-82b6-73bbc854258a:发送成功.
+2018-01-11 13:19:55  [ AMQP Connection 116.62.173.111:5672:10055 ] - [ WARN ]  022f3a75-3e63-4eab-bab2-e06ba2652173:发送成功.
+2018-01-11 13:19:55  [ AMQP Connection 116.62.173.111:5672:10105 ] - [ WARN ]  d8e4ff05-3b00-4ee9-a8c1-1be96dec6da2:发送成功.
+2018-01-11 13:19:56  [ AMQP Connection 116.62.173.111:5672:10692 ] - [ WARN ]  1fd3d0fa-8d55-451d-9f87-7e4f500401cd:发送成功.
+2018-01-11 13:19:56  [ AMQP Connection 116.62.173.111:5672:10752 ] - [ WARN ]  039790d8-72a8-42be-9f8a-050e813e1635:发送成功.
+2018-01-11 13:19:56  [ AMQP Connection 116.62.173.111:5672:10776 ] - [ WARN ]  eb7d48d3-f9fb-493f-9a16-19bb0b488751:发送成功.
+2018-01-11 13:19:56  [ AMQP Connection 116.62.173.111:5672:10837 ] - [ WARN ]  f3d9888a-d23d-4262-8368-26aca4ad0a90:发送成功.
+2018-01-11 13:19:56  [ AMQP Connection 116.62.173.111:5672:10873 ] - [ WARN ]  1d01f6e9-6aee-4f8b-972a-5ea0a8740fea:发送成功.
+2018-01-11 13:19:56  [ AMQP Connection 116.62.173.111:5672:10917 ] - [ WARN ]  7e7db4d9-df78-4221-8086-51f0587e484c:发送成功.
+2018-01-11 13:19:56  [ AMQP Connection 116.62.173.111:5672:10970 ] - [ WARN ]  7f209d11-f5a4-4838-baab-c7e12419c1de:发送成功.
+2018-01-11 13:19:56  [ AMQP Connection 116.62.173.111:5672:11003 ] - [ WARN ]  af2116e2-f2e5-428d-a843-b138ea1780a1:发送成功.
+2018-01-11 13:19:56  [ AMQP Connection 116.62.173.111:5672:11048 ] - [ WARN ]  6937c6ae-d995-4c55-94a0-48cf6b1fba11:发送成功.
+2018-01-11 13:19:56  [ AMQP Connection 116.62.173.111:5672:11103 ] - [ WARN ]  a506dfa5-650e-467e-ac2b-65e02d513055:发送成功.
+2018-01-11 13:19:57  [ ConcurrentTestTools-thread-0:11586 ] - [ INFO ]  ConcurrentTestTools-thread-0 execute finshed.
+2018-01-11 13:19:57  [ ConcurrentTestTools-thread-9:11587 ] - [ INFO ]  ConcurrentTestTools-thread-9 execute finshed.
+2018-01-11 13:19:57  [ ConcurrentTestTools-thread-2:11587 ] - [ INFO ]  ConcurrentTestTools-thread-2 execute finshed.
+2018-01-11 13:19:57  [ ConcurrentTestTools-thread-7:11588 ] - [ INFO ]  ConcurrentTestTools-thread-7 execute finshed.
+2018-01-11 13:19:57  [ ConcurrentTestTools-thread-8:11589 ] - [ INFO ]  ConcurrentTestTools-thread-8 execute finshed.
+2018-01-11 13:19:57  [ ConcurrentTestTools-thread-6:11619 ] - [ INFO ]  ConcurrentTestTools-thread-6 execute finshed.
+2018-01-11 13:19:57  [ ConcurrentTestTools-thread-3:11670 ] - [ INFO ]  ConcurrentTestTools-thread-3 execute finshed.
+2018-01-11 13:19:57  [ AMQP Connection 116.62.173.111:5672:11682 ] - [ WARN ]  fa4f62de-0182-40ab-b5ba-c11599fb7562:发送成功.
+2018-01-11 13:19:57  [ AMQP Connection 116.62.173.111:5672:11724 ] - [ WARN ]  62dc44b0-d8e6-4843-b438-072b5e0bddfc:发送成功.
+2018-01-11 13:19:57  [ ConcurrentTestTools-thread-4:11726 ] - [ INFO ]  ConcurrentTestTools-thread-4 execute finshed.
+2018-01-11 13:19:57  [ ConcurrentTestTools-thread-1:11771 ] - [ INFO ]  ConcurrentTestTools-thread-1 execute finshed.
+2018-01-11 13:19:57  [ AMQP Connection 116.62.173.111:5672:11797 ] - [ WARN ]  717b0232-96a8-4bad-ac04-2f6fcd208093:发送成功.
+2018-01-11 13:19:57  [ ConcurrentTestTools-thread-5:11815 ] - [ INFO ]  ConcurrentTestTools-thread-5 execute finshed.
+2018-01-11 13:19:57  [ AMQP Connection 116.62.173.111:5672:11821 ] - [ WARN ]  bd3c1cfd-ae24-43fd-905f-59fb8c8ac0b6:发送成功.
+2018-01-11 13:19:57  [ Thread-3:11823 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 13:19:46 CST 2018]; root of context hierarchy
+2018-01-11 13:19:57  [ Thread-3:11824 ] - [ INFO ]  Stopping beans in phase 2147483647
+2018-01-11 13:19:57  [ AMQP Connection 116.62.173.111:5672:11872 ] - [ WARN ]  1f949806-8eb9-4595-92c5-fde9b93cd7b5:发送成功.
+2018-01-11 13:19:57  [ Thread-3:11917 ] - [ INFO ]  Waiting for workers to finish.
+2018-01-11 13:19:57  [ Thread-3:11922 ] - [ INFO ]  Successfully waited for workers to finish.
+2018-01-11 13:19:57  [ AMQP Connection 116.62.173.111:5672:11930 ] - [ WARN ]  4f58c2e5-ac82-4ee7-9ff0-53cd10898647:发送成功.
+2018-01-11 13:19:57  [ AMQP Connection 116.62.173.111:5672:11999 ] - [ WARN ]  51200a7a-7d1c-4899-94bc-960bf2a5e9d7:发送成功.
+2018-01-11 13:19:57  [ AMQP Connection 116.62.173.111:5672:12017 ] - [ WARN ]  d30f77a3-c6f9-470e-8361-4e961e0fb6f7:发送成功.
+2018-01-11 13:19:57  [ AMQP Connection 116.62.173.111:5672:12055 ] - [ WARN ]  48389221-f616-4507-8c74-3e5029e0bc77:发送成功.
+2018-01-11 13:19:57  [ AMQP Connection 116.62.173.111:5672:12113 ] - [ WARN ]  0dddd3f1-c581-4102-b3a6-43132b86c8da:发送成功.
+2018-01-11 13:25:31  [ main:49 ] - [ INFO ]  Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nettyBio.BillNumTest], using SpringBootContextLoader
+2018-01-11 13:25:31  [ main:54 ] - [ INFO ]  Could not detect default resource locations for test class [com.nettyBio.BillNumTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-11 13:25:31  [ main:127 ] - [ INFO ]  Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-11 13:25:31  [ main:150 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@8e24743, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@74a10858, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23fe1d71, org.springframework.test.context.transaction.TransactionalTestExecutionListener@28ac3dc3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32eebfca, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e718207, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d371b2d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@543c6f6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13eb8acf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@51c8530f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7403c468]
+2018-01-11 13:25:32  [ main:670 ] - [ INFO ]  Starting BillNumTest on lijin1586 with PID 25132 (started by invengo in D:\ideaSpace\springbootDemo)
+2018-01-11 13:25:32  [ main:670 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-01-11 13:25:32  [ main:911 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 13:25:32 CST 2018]; root of context hierarchy
+2018-01-11 13:25:32  [ background-preinit:1031 ] - [ INFO ]  HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 13:25:33  [ main:1826 ] - [ INFO ]  Overriding bean definition for bean 'defaultExchange' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpConsumerConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpConsumerConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpProviderConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpProviderConfig.class]]
+2018-01-11 13:25:33  [ main:2143 ] - [ INFO ]  Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-11 13:25:34  [ main:2716 ] - [ INFO ]  Bean 'mybatisConfig' of type [com.ivg.demo.config.MybatisConfig$$EnhancerBySpringCGLIB$$5ee839b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:25:34  [ main:2984 ] - [ INFO ]  Bean 'dataSource' of type [org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:25:34  [ main:3151 ] - [ INFO ]  Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:25:34  [ main:3158 ] - [ INFO ]  Bean 'storeOutBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:25:34  [ main:3160 ] - [ INFO ]  Bean 'storeInBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:25:34  [ main:3162 ] - [ INFO ]  Bean 'storeInBillExMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:25:34  [ main:3195 ] - [ INFO ]  Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7cfaa88b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 13:25:35  [ main:3568 ] - [ INFO ]  JedisConnectionFactory bean init success.
+2018-01-11 13:25:36  [ main:4431 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 13:25:32 CST 2018]; root of context hierarchy
+2018-01-11 13:25:36  [ main:4512 ] - [ INFO ]  Mapped "{[/inbill/getInBill]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.getInBillBySupplierCode(java.lang.String)
+2018-01-11 13:25:36  [ main:4513 ] - [ INFO ]  Mapped "{[/inbill/findInBillAll]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.findInBill()
+2018-01-11 13:25:36  [ main:4516 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 13:25:36  [ main:4516 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 13:25:36  [ main:4574 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:25:36  [ main:4574 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:25:36  [ main:4627 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:25:37  [ main:5474 ] - [ INFO ]  Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:25:37  [ main:5475 ] - [ INFO ]  Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:25:37  [ main:5477 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-01-11 13:25:37  [ main:5477 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-01-11 13:25:37  [ main:5477 ] - [ INFO ]  Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:25:37  [ main:5477 ] - [ INFO ]  Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:25:37  [ main:5479 ] - [ INFO ]  Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:25:37  [ main:5480 ] - [ INFO ]  Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-01-11 13:25:37  [ main:5480 ] - [ INFO ]  Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-01-11 13:25:37  [ main:5480 ] - [ INFO ]  Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:25:37  [ main:5481 ] - [ INFO ]  Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-01-11 13:25:37  [ main:5484 ] - [ INFO ]  Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-01-11 13:25:37  [ main:5484 ] - [ INFO ]  Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:25:37  [ main:5485 ] - [ INFO ]  Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:25:37  [ main:5485 ] - [ INFO ]  Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-01-11 13:25:37  [ main:5486 ] - [ INFO ]  Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:25:37  [ main:5486 ] - [ INFO ]  Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 13:25:37  [ main:5854 ] - [ INFO ]  Starting beans in phase 2147483647
+2018-01-11 13:25:37  [ messageContainer-1:6076 ] - [ INFO ]  Created new connection: mqConnectionFactory#641b0320:0/SimpleConnection@6f0e746 [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 62662]
+2018-01-11 13:25:37  [ main:6319 ] - [ INFO ]  Started BillNumTest in 6.031 seconds (JVM running for 6.865)
+2018-01-11 13:25:37  [ ConcurrentTestTools-thread-6:6385 ] - [ INFO ]  ConcurrentTestTools-thread-6 init finshed.
+2018-01-11 13:25:37  [ ConcurrentTestTools-thread-9:6386 ] - [ INFO ]  ConcurrentTestTools-thread-9 init finshed.
+2018-01-11 13:25:37  [ ConcurrentTestTools-thread-5:6385 ] - [ INFO ]  ConcurrentTestTools-thread-5 init finshed.
+2018-01-11 13:25:37  [ ConcurrentTestTools-thread-1:6385 ] - [ INFO ]  ConcurrentTestTools-thread-1 init finshed.
+2018-01-11 13:25:37  [ ConcurrentTestTools-thread-2:6385 ] - [ INFO ]  ConcurrentTestTools-thread-2 init finshed.
+2018-01-11 13:25:37  [ ConcurrentTestTools-thread-3:6385 ] - [ INFO ]  ConcurrentTestTools-thread-3 init finshed.
+2018-01-11 13:25:37  [ ConcurrentTestTools-thread-7:6385 ] - [ INFO ]  ConcurrentTestTools-thread-7 init finshed.
+2018-01-11 13:25:37  [ ConcurrentTestTools-thread-8:6386 ] - [ INFO ]  ConcurrentTestTools-thread-8 init finshed.
+2018-01-11 13:25:37  [ ConcurrentTestTools-thread-4:6385 ] - [ INFO ]  ConcurrentTestTools-thread-4 init finshed.
+2018-01-11 13:25:37  [ ConcurrentTestTools-thread-0:6385 ] - [ INFO ]  ConcurrentTestTools-thread-0 init finshed.
+2018-01-11 13:25:39  [ ConcurrentTestTools-thread-3:7535 ] - [ INFO ]  Created new connection: connectionFactory#3e59aaa5:0/SimpleConnection@7f64a09e [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 62663]
+2018-01-11 13:25:39  [ AMQP Connection 116.62.173.111:5672:7754 ] - [ WARN ]  6f2d75aa-a18b-4a42-8f79-550d27f63249:发送成功.
+2018-01-11 13:25:39  [ AMQP Connection 116.62.173.111:5672:7798 ] - [ WARN ]  bcbdee21-1658-4a74-8baf-e2733f4b60b6:发送成功.
+2018-01-11 13:25:39  [ AMQP Connection 116.62.173.111:5672:7837 ] - [ WARN ]  e88a9ce8-c16f-418b-8fa7-f66a0c2de7ab:发送成功.
+2018-01-11 13:25:39  [ AMQP Connection 116.62.173.111:5672:7903 ] - [ WARN ]  af7f29ac-dcf1-4366-bcfb-1fb1c220c719:发送成功.
+2018-01-11 13:25:39  [ AMQP Connection 116.62.173.111:5672:7907 ] - [ WARN ]  830b94f2-0eec-444d-9d42-6e63c7fdd5bb:发送成功.
+2018-01-11 13:25:39  [ AMQP Connection 116.62.173.111:5672:7947 ] - [ WARN ]  409ccca8-98f2-4fe6-9cbd-ce93678251ff:发送成功.
+2018-01-11 13:25:39  [ AMQP Connection 116.62.173.111:5672:8039 ] - [ WARN ]  ce0efcd4-c224-42f1-a842-c667f4e693ee:发送成功.
+2018-01-11 13:25:39  [ AMQP Connection 116.62.173.111:5672:8107 ] - [ WARN ]  3df6e371-8078-4c4e-b897-a20aefddade1:发送成功.
+2018-01-11 13:25:39  [ AMQP Connection 116.62.173.111:5672:8107 ] - [ WARN ]  a1c2b59d-1fcf-4ecb-88d9-3d1ad0f3294e:发送成功.
+2018-01-11 13:25:39  [ AMQP Connection 116.62.173.111:5672:8133 ] - [ WARN ]  845dea5b-8ff5-4ddc-8723-47c49af6673f:发送成功.
+2018-01-11 13:25:40  [ AMQP Connection 116.62.173.111:5672:8754 ] - [ WARN ]  bb05eae3-1e7c-4cb9-9b87-8d43721edc12:发送成功.
+2018-01-11 13:25:40  [ AMQP Connection 116.62.173.111:5672:8768 ] - [ WARN ]  425dc94a-f84e-4952-9fdc-b6fd07329cc7:发送成功.
+2018-01-11 13:25:40  [ AMQP Connection 116.62.173.111:5672:8825 ] - [ WARN ]  5052c965-1866-41c3-92b1-95429d0102b2:发送成功.
+2018-01-11 13:25:40  [ AMQP Connection 116.62.173.111:5672:8871 ] - [ WARN ]  21755162-4944-4d13-aa6b-9e6b54821a5d:发送成功.
+2018-01-11 13:25:40  [ AMQP Connection 116.62.173.111:5672:8950 ] - [ WARN ]  f63bc5a2-22ca-4a5a-94c2-205fbdd1e501:发送成功.
+2018-01-11 13:25:40  [ AMQP Connection 116.62.173.111:5672:8955 ] - [ WARN ]  90999e9f-5b99-4dd4-acf9-93d98bee2592:发送成功.
+2018-01-11 13:25:40  [ AMQP Connection 116.62.173.111:5672:8991 ] - [ WARN ]  b81880e3-0a84-461a-a855-c9bc53cae29c:发送成功.
+2018-01-11 13:25:40  [ AMQP Connection 116.62.173.111:5672:9054 ] - [ WARN ]  c43741b7-5097-42a0-8138-d82d8ec31c50:发送成功.
+2018-01-11 13:25:40  [ AMQP Connection 116.62.173.111:5672:9089 ] - [ WARN ]  bfc4b448-b658-4493-9042-76e26515b4e8:发送成功.
+2018-01-11 13:25:40  [ AMQP Connection 116.62.173.111:5672:9128 ] - [ WARN ]  e351de81-48f4-4fe9-993f-938eadfc54c9:发送成功.
+2018-01-11 13:25:41  [ AMQP Connection 116.62.173.111:5672:9724 ] - [ WARN ]  0a23d32e-b265-4465-9e39-4c300baaec31:发送成功.
+2018-01-11 13:25:41  [ AMQP Connection 116.62.173.111:5672:9816 ] - [ WARN ]  76e53f4b-272a-48fe-8841-c1f9ca76286c:发送成功.
+2018-01-11 13:25:41  [ AMQP Connection 116.62.173.111:5672:9820 ] - [ WARN ]  7caa955a-a92a-43e8-8f13-7317cc6b6cd2:发送成功.
+2018-01-11 13:25:41  [ AMQP Connection 116.62.173.111:5672:9863 ] - [ WARN ]  5b181979-62a6-40c5-ad5c-4ebc915e80a6:发送成功.
+2018-01-11 13:25:41  [ AMQP Connection 116.62.173.111:5672:9925 ] - [ WARN ]  8dcbc2b5-c8ee-48d9-9d4e-ca647ace808a:发送成功.
+2018-01-11 13:25:41  [ AMQP Connection 116.62.173.111:5672:9980 ] - [ WARN ]  8b34737a-d98f-44b4-8790-1ac4e683ff23:发送成功.
+2018-01-11 13:25:41  [ AMQP Connection 116.62.173.111:5672:10027 ] - [ WARN ]  aff86182-73f5-4a4a-9e16-67f9804a8b05:发送成功.
+2018-01-11 13:25:41  [ AMQP Connection 116.62.173.111:5672:10069 ] - [ WARN ]  3a3171e2-a0ac-4db7-93bf-acd98dadf28f:发送成功.
+2018-01-11 13:25:41  [ AMQP Connection 116.62.173.111:5672:10097 ] - [ WARN ]  68f6737f-d4f6-44a3-822f-27068d33ccdd:发送成功.
+2018-01-11 13:25:41  [ AMQP Connection 116.62.173.111:5672:10145 ] - [ WARN ]  13be2562-8a51-49c9-b7c0-c5610b178766:发送成功.
+2018-01-11 13:25:42  [ AMQP Connection 116.62.173.111:5672:10748 ] - [ WARN ]  9528475d-31db-46a6-9df9-ad23eb8b5fe2:发送成功.
+2018-01-11 13:25:42  [ AMQP Connection 116.62.173.111:5672:10774 ] - [ WARN ]  8f1dfc64-9d60-4422-9d6f-e077027959de:发送成功.
+2018-01-11 13:25:42  [ AMQP Connection 116.62.173.111:5672:10868 ] - [ WARN ]  be589b13-700d-4759-a64a-524a33f1d1d9:发送成功.
+2018-01-11 13:25:42  [ AMQP Connection 116.62.173.111:5672:10872 ] - [ WARN ]  72ad6d69-e8dd-4f6c-8d6e-709e10a5429a:发送成功.
+2018-01-11 13:25:42  [ AMQP Connection 116.62.173.111:5672:10944 ] - [ WARN ]  e82f3001-7fc3-4b30-a5be-59d8b95c5aca:发送成功.
+2018-01-11 13:25:42  [ AMQP Connection 116.62.173.111:5672:10977 ] - [ WARN ]  c5e16cd1-0f31-457b-864f-8279a86a6de3:发送成功.
+2018-01-11 13:25:42  [ AMQP Connection 116.62.173.111:5672:11084 ] - [ WARN ]  2b760d18-3b4f-45a7-9b4b-b479f724b659:发送成功.
+2018-01-11 13:25:42  [ AMQP Connection 116.62.173.111:5672:11089 ] - [ WARN ]  027c7ce4-7ebf-45e0-b6ac-2af4a9fe4872:发送成功.
+2018-01-11 13:25:42  [ AMQP Connection 116.62.173.111:5672:11094 ] - [ WARN ]  40aae568-d285-49d1-a405-373639a8bfa9:发送成功.
+2018-01-11 13:25:42  [ AMQP Connection 116.62.173.111:5672:11158 ] - [ WARN ]  1e0d420d-d053-4161-88d3-cc1567474e19:发送成功.
+2018-01-11 13:25:43  [ ConcurrentTestTools-thread-4:11623 ] - [ INFO ]  ConcurrentTestTools-thread-4 execute finshed.
+2018-01-11 13:25:43  [ ConcurrentTestTools-thread-0:11636 ] - [ INFO ]  ConcurrentTestTools-thread-0 execute finshed.
+2018-01-11 13:25:43  [ ConcurrentTestTools-thread-3:11636 ] - [ INFO ]  ConcurrentTestTools-thread-3 execute finshed.
+2018-01-11 13:25:43  [ ConcurrentTestTools-thread-9:11639 ] - [ INFO ]  ConcurrentTestTools-thread-9 execute finshed.
+2018-01-11 13:25:43  [ ConcurrentTestTools-thread-1:11666 ] - [ INFO ]  ConcurrentTestTools-thread-1 execute finshed.
+2018-01-11 13:25:43  [ ConcurrentTestTools-thread-5:11667 ] - [ INFO ]  ConcurrentTestTools-thread-5 execute finshed.
+2018-01-11 13:25:43  [ ConcurrentTestTools-thread-7:11710 ] - [ INFO ]  ConcurrentTestTools-thread-7 execute finshed.
+2018-01-11 13:25:43  [ AMQP Connection 116.62.173.111:5672:11717 ] - [ WARN ]  282d1d4f-27b6-4326-9703-d89a4a9a4fe7:发送成功.
+2018-01-11 13:25:43  [ ConcurrentTestTools-thread-2:11764 ] - [ INFO ]  ConcurrentTestTools-thread-2 execute finshed.
+2018-01-11 13:25:43  [ AMQP Connection 116.62.173.111:5672:11771 ] - [ WARN ]  7a4bb98f-5f4e-4604-8ac3-bd24e8abbddf:发送成功.
+2018-01-11 13:25:43  [ AMQP Connection 116.62.173.111:5672:11816 ] - [ WARN ]  583cec2b-40d8-4710-b9cd-e792eb87aa5e:发送成功.
+2018-01-11 13:25:43  [ ConcurrentTestTools-thread-6:11819 ] - [ INFO ]  ConcurrentTestTools-thread-6 execute finshed.
+2018-01-11 13:25:43  [ ConcurrentTestTools-thread-8:11875 ] - [ INFO ]  ConcurrentTestTools-thread-8 execute finshed.
+2018-01-11 13:25:43  [ AMQP Connection 116.62.173.111:5672:11883 ] - [ WARN ]  4577740b-e85e-4eba-bc44-c1ccb7d0f3c9:发送成功.
+2018-01-11 13:25:43  [ Thread-3:11886 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 13:25:32 CST 2018]; root of context hierarchy
+2018-01-11 13:25:43  [ Thread-3:11887 ] - [ INFO ]  Stopping beans in phase 2147483647
+2018-01-11 13:25:43  [ AMQP Connection 116.62.173.111:5672:11925 ] - [ WARN ]  9fab1647-2d94-4665-8d02-c86441470364:发送成功.
+2018-01-11 13:25:43  [ Thread-3:11950 ] - [ INFO ]  Waiting for workers to finish.
+2018-01-11 13:25:43  [ AMQP Connection 116.62.173.111:5672:11955 ] - [ WARN ]  7b070527-6809-4e56-9d3e-40e601336364:发送成功.
+2018-01-11 13:25:43  [ Thread-3:11957 ] - [ INFO ]  Successfully waited for workers to finish.
+2018-01-11 13:25:43  [ AMQP Connection 116.62.173.111:5672:11999 ] - [ WARN ]  c3fbe675-2aa6-4185-9621-52c9ff71d4f0:发送成功.
+2018-01-11 13:25:43  [ AMQP Connection 116.62.173.111:5672:12046 ] - [ WARN ]  dedeb94a-f208-437b-a281-9ce966412d31:发送成功.
+2018-01-11 13:25:43  [ AMQP Connection 116.62.173.111:5672:12094 ] - [ WARN ]  edc2125b-b04b-43af-a04f-dd0dd783a271:发送成功.
+2018-01-11 13:25:43  [ AMQP Connection 116.62.173.111:5672:12141 ] - [ WARN ]  c1e4dbba-b1ed-4eb6-9789-738eb52ac0b8:发送成功.
+2018-01-11 15:34:13  [ main:45 ] - [ INFO ]  Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nettyBio.BillNumTest], using SpringBootContextLoader
+2018-01-11 15:34:13  [ main:52 ] - [ INFO ]  Could not detect default resource locations for test class [com.nettyBio.BillNumTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-11 15:34:13  [ main:127 ] - [ INFO ]  Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-11 15:34:13  [ main:152 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@8e24743, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@74a10858, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23fe1d71, org.springframework.test.context.transaction.TransactionalTestExecutionListener@28ac3dc3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32eebfca, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e718207, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d371b2d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@543c6f6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13eb8acf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@51c8530f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7403c468]
+2018-01-11 15:34:14  [ main:681 ] - [ INFO ]  Starting BillNumTest on lijin1586 with PID 2376 (started by invengo in D:\ideaSpace\springbootDemo)
+2018-01-11 15:34:14  [ main:681 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-01-11 15:34:14  [ main:933 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 15:34:14 CST 2018]; root of context hierarchy
+2018-01-11 15:34:14  [ background-preinit:1042 ] - [ INFO ]  HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 15:34:15  [ main:1854 ] - [ INFO ]  Overriding bean definition for bean 'defaultExchange' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpConsumerConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpConsumerConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpProviderConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpProviderConfig.class]]
+2018-01-11 15:34:15  [ main:2143 ] - [ INFO ]  Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-11 15:34:16  [ main:2765 ] - [ INFO ]  Bean 'mybatisConfig' of type [com.ivg.demo.config.MybatisConfig$$EnhancerBySpringCGLIB$$8c00ca6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:34:16  [ main:3022 ] - [ INFO ]  Bean 'dataSource' of type [org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:34:16  [ main:3200 ] - [ INFO ]  Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:34:16  [ main:3206 ] - [ INFO ]  Bean 'storeOutBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:34:16  [ main:3208 ] - [ INFO ]  Bean 'storeInBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:34:16  [ main:3210 ] - [ INFO ]  Bean 'storeInBillExMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:34:17  [ main:3247 ] - [ INFO ]  Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$aa133944] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:34:17  [ main:3628 ] - [ INFO ]  JedisConnectionFactory bean init success.
+2018-01-11 15:34:18  [ main:4586 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 15:34:14 CST 2018]; root of context hierarchy
+2018-01-11 15:34:18  [ main:4695 ] - [ INFO ]  Mapped "{[/inbill/getInBill]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.getInBillBySupplierCode(java.lang.String)
+2018-01-11 15:34:18  [ main:4696 ] - [ INFO ]  Mapped "{[/inbill/findInBillAll]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.findInBill()
+2018-01-11 15:34:18  [ main:4698 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 15:34:18  [ main:4699 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 15:34:18  [ main:4755 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 15:34:18  [ main:4755 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 15:34:18  [ main:4815 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 15:34:19  [ main:5698 ] - [ INFO ]  Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:34:19  [ main:5699 ] - [ INFO ]  Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:34:19  [ main:5700 ] - [ INFO ]  Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:34:19  [ main:5701 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-01-11 15:34:19  [ main:5702 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-01-11 15:34:19  [ main:5702 ] - [ INFO ]  Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:34:19  [ main:5702 ] - [ INFO ]  Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-01-11 15:34:19  [ main:5704 ] - [ INFO ]  Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-01-11 15:34:19  [ main:5704 ] - [ INFO ]  Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:34:19  [ main:5705 ] - [ INFO ]  Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:34:19  [ main:5707 ] - [ INFO ]  Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-01-11 15:34:19  [ main:5707 ] - [ INFO ]  Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:34:19  [ main:5709 ] - [ INFO ]  Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-01-11 15:34:19  [ main:5709 ] - [ INFO ]  Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:34:19  [ main:5709 ] - [ INFO ]  Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:34:19  [ main:5710 ] - [ INFO ]  Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-01-11 15:34:19  [ main:5710 ] - [ INFO ]  Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:34:19  [ main:6104 ] - [ INFO ]  Starting beans in phase 2147483647
+2018-01-11 15:34:20  [ messageContainer-1:6442 ] - [ INFO ]  Created new connection: mqConnectionFactory#11184084:0/SimpleConnection@665836ea [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 59444]
+2018-01-11 15:34:20  [ main:6820 ] - [ INFO ]  Started BillNumTest in 6.523 seconds (JVM running for 7.383)
+2018-01-11 15:34:20  [ ConcurrentTestTools-thread-0:6884 ] - [ INFO ]  ConcurrentTestTools-thread-0 init finshed.
+2018-01-11 15:34:20  [ ConcurrentTestTools-thread-3:6885 ] - [ INFO ]  ConcurrentTestTools-thread-3 init finshed.
+2018-01-11 15:34:20  [ ConcurrentTestTools-thread-7:6885 ] - [ INFO ]  ConcurrentTestTools-thread-7 init finshed.
+2018-01-11 15:34:20  [ ConcurrentTestTools-thread-2:6885 ] - [ INFO ]  ConcurrentTestTools-thread-2 init finshed.
+2018-01-11 15:34:20  [ ConcurrentTestTools-thread-1:6884 ] - [ INFO ]  ConcurrentTestTools-thread-1 init finshed.
+2018-01-11 15:34:20  [ ConcurrentTestTools-thread-9:6885 ] - [ INFO ]  ConcurrentTestTools-thread-9 init finshed.
+2018-01-11 15:34:20  [ ConcurrentTestTools-thread-8:6885 ] - [ INFO ]  ConcurrentTestTools-thread-8 init finshed.
+2018-01-11 15:34:20  [ ConcurrentTestTools-thread-6:6885 ] - [ INFO ]  ConcurrentTestTools-thread-6 init finshed.
+2018-01-11 15:34:20  [ ConcurrentTestTools-thread-5:6885 ] - [ INFO ]  ConcurrentTestTools-thread-5 init finshed.
+2018-01-11 15:34:20  [ ConcurrentTestTools-thread-4:6885 ] - [ INFO ]  ConcurrentTestTools-thread-4 init finshed.
+2018-01-11 15:34:21  [ ConcurrentTestTools-thread-9:8106 ] - [ INFO ]  Created new connection: connectionFactory#73483905:0/SimpleConnection@3275333e [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 59445]
+2018-01-11 15:34:22  [ AMQP Connection 116.62.173.111:5672:8351 ] - [ WARN ]  8e6791a3-1f56-4bf7-9ef3-46859a3ae280:发送成功.
+2018-01-11 15:34:22  [ AMQP Connection 116.62.173.111:5672:8430 ] - [ WARN ]  0c6b03fc-280c-4027-bf0c-efdfdf443f67:发送成功.
+2018-01-11 15:34:22  [ AMQP Connection 116.62.173.111:5672:8567 ] - [ WARN ]  70aeead5-2a21-479e-bfae-06d048ea5879:发送成功.
+2018-01-11 15:34:22  [ AMQP Connection 116.62.173.111:5672:8571 ] - [ WARN ]  5421c333-c1a6-4d52-aa4a-6b153d89bfe6:发送成功.
+2018-01-11 15:34:22  [ AMQP Connection 116.62.173.111:5672:8656 ] - [ WARN ]  21f77c58-c529-46b3-bf2b-d5c645b4cc10:发送成功.
+2018-01-11 15:34:22  [ AMQP Connection 116.62.173.111:5672:8662 ] - [ WARN ]  a1a72cf0-fbca-4920-9a0b-d247a89e0ddc:发送成功.
+2018-01-11 15:34:22  [ AMQP Connection 116.62.173.111:5672:8662 ] - [ WARN ]  04e0ea03-b4b7-44e9-abba-befe7190d6c8:发送成功.
+2018-01-11 15:34:22  [ AMQP Connection 116.62.173.111:5672:8664 ] - [ WARN ]  918c613d-83e3-47c4-8fd7-07edbe99cf6f:发送成功.
+2018-01-11 15:34:22  [ AMQP Connection 116.62.173.111:5672:8677 ] - [ WARN ]  ba2aa006-89cd-4e5f-8c5f-5bac2dd8be91:发送成功.
+2018-01-11 15:34:22  [ AMQP Connection 116.62.173.111:5672:8747 ] - [ WARN ]  3827cfbd-cd92-449b-bfdb-82a0772bd9ac:发送成功.
+2018-01-11 15:34:23  [ AMQP Connection 116.62.173.111:5672:9476 ] - [ WARN ]  fc78dad1-a244-49ae-a8a6-5b998dddaa1b:发送成功.
+2018-01-11 15:34:23  [ AMQP Connection 116.62.173.111:5672:9478 ] - [ WARN ]  63f0a410-cc87-4609-99cb-f6709c91a9b8:发送成功.
+2018-01-11 15:34:23  [ AMQP Connection 116.62.173.111:5672:9478 ] - [ WARN ]  eee7c20b-ba62-49bf-bf70-d15be8edb62a:发送成功.
+2018-01-11 15:34:23  [ AMQP Connection 116.62.173.111:5672:9493 ] - [ WARN ]  6ebd32ac-96b7-4a28-a027-27d1b7233060:发送成功.
+2018-01-11 15:34:23  [ AMQP Connection 116.62.173.111:5672:9503 ] - [ WARN ]  952ffe05-5757-4723-9513-bcb6412751b4:发送成功.
+2018-01-11 15:34:23  [ AMQP Connection 116.62.173.111:5672:9537 ] - [ WARN ]  f5433852-d9bc-49bc-a674-0c0faad8e311:发送成功.
+2018-01-11 15:34:23  [ AMQP Connection 116.62.173.111:5672:9628 ] - [ WARN ]  50aaaff4-fda2-4d3a-b66b-ef184b83ce27:发送成功.
+2018-01-11 15:34:23  [ AMQP Connection 116.62.173.111:5672:9649 ] - [ WARN ]  57274a94-74fd-4f25-9f4d-2c245c4cc2a2:发送成功.
+2018-01-11 15:34:23  [ AMQP Connection 116.62.173.111:5672:9771 ] - [ WARN ]  81142379-9359-4454-9ed9-72bfa19e1c03:发送成功.
+2018-01-11 15:34:23  [ AMQP Connection 116.62.173.111:5672:9771 ] - [ WARN ]  233b8f28-0fc8-407b-b089-796d4124fd4b:发送成功.
+2018-01-11 15:34:24  [ AMQP Connection 116.62.173.111:5672:10305 ] - [ WARN ]  c665b4d4-008e-452b-99b5-e0a00d996b78:发送成功.
+2018-01-11 15:34:24  [ AMQP Connection 116.62.173.111:5672:10362 ] - [ WARN ]  d5380bab-962e-44af-afbf-bc0f68d2c8a6:发送成功.
+2018-01-11 15:34:24  [ AMQP Connection 116.62.173.111:5672:10444 ] - [ WARN ]  1e0eb66c-c427-44dd-98b2-efbec098368a:发送成功.
+2018-01-11 15:34:24  [ AMQP Connection 116.62.173.111:5672:10471 ] - [ WARN ]  888bff02-c634-477d-8dd1-196b4f4c42e6:发送成功.
+2018-01-11 15:34:24  [ AMQP Connection 116.62.173.111:5672:10594 ] - [ WARN ]  c5a94732-d9d7-44f4-83fc-4c22fbb71b9e:发送成功.
+2018-01-11 15:34:24  [ AMQP Connection 116.62.173.111:5672:10692 ] - [ WARN ]  ca34c052-c45f-483b-a5d1-87ad25dd7d85:发送成功.
+2018-01-11 15:34:24  [ AMQP Connection 116.62.173.111:5672:10700 ] - [ WARN ]  164e99b3-aee7-4eec-9cf2-a94ce112730f:发送成功.
+2018-01-11 15:34:24  [ AMQP Connection 116.62.173.111:5672:10700 ] - [ WARN ]  5d7f7230-4da5-46f4-9feb-cd6b1362cf1c:发送成功.
+2018-01-11 15:34:24  [ AMQP Connection 116.62.173.111:5672:10712 ] - [ WARN ]  67ae7a7a-58ca-472e-9f90-a9aac70cd9ae:发送成功.
+2018-01-11 15:34:24  [ AMQP Connection 116.62.173.111:5672:10764 ] - [ WARN ]  8c07bbf6-6682-42f5-adbb-e7dc0bb194ba:发送成功.
+2018-01-11 15:34:25  [ AMQP Connection 116.62.173.111:5672:11361 ] - [ WARN ]  42b7b54a-c5be-4367-a66f-da172bb98fe7:发送成功.
+2018-01-11 15:34:25  [ AMQP Connection 116.62.173.111:5672:11463 ] - [ WARN ]  ee9066a8-cefa-4507-9ffe-da5116b19798:发送成功.
+2018-01-11 15:34:25  [ AMQP Connection 116.62.173.111:5672:11467 ] - [ WARN ]  c929b1b7-1862-495a-a473-86b9ceee1ea8:发送成功.
+2018-01-11 15:34:25  [ AMQP Connection 116.62.173.111:5672:11469 ] - [ WARN ]  5aed45ae-7dbb-4877-b646-b4fbad767714:发送成功.
+2018-01-11 15:34:25  [ AMQP Connection 116.62.173.111:5672:11497 ] - [ WARN ]  0f6843d4-6fb7-455e-8ab8-b525150ae294:发送成功.
+2018-01-11 15:34:25  [ AMQP Connection 116.62.173.111:5672:11558 ] - [ WARN ]  2d4612d3-e5a3-4cef-a68f-a6844c735a4c:发送成功.
+2018-01-11 15:34:25  [ AMQP Connection 116.62.173.111:5672:11576 ] - [ WARN ]  b773f635-c42c-4fa7-b264-caebf6a0035b:发送成功.
+2018-01-11 15:34:25  [ AMQP Connection 116.62.173.111:5672:11666 ] - [ WARN ]  20538819-d385-4ec8-9ea2-face16274d33:发送成功.
+2018-01-11 15:34:25  [ AMQP Connection 116.62.173.111:5672:11762 ] - [ WARN ]  d6aae601-60df-4711-8b06-e122892058c3:发送成功.
+2018-01-11 15:34:25  [ AMQP Connection 116.62.173.111:5672:11762 ] - [ WARN ]  156369c0-dde0-40bf-9274-72080def5d48:发送成功.
+2018-01-11 15:34:25  [ ConcurrentTestTools-thread-5:12195 ] - [ INFO ]  ConcurrentTestTools-thread-5 execute finshed.
+2018-01-11 15:34:25  [ ConcurrentTestTools-thread-2:12195 ] - [ INFO ]  ConcurrentTestTools-thread-2 execute finshed.
+2018-01-11 15:34:25  [ ConcurrentTestTools-thread-0:12196 ] - [ INFO ]  ConcurrentTestTools-thread-0 execute finshed.
+2018-01-11 15:34:25  [ ConcurrentTestTools-thread-1:12196 ] - [ INFO ]  ConcurrentTestTools-thread-1 execute finshed.
+2018-01-11 15:34:25  [ ConcurrentTestTools-thread-9:12196 ] - [ INFO ]  ConcurrentTestTools-thread-9 execute finshed.
+2018-01-11 15:34:25  [ ConcurrentTestTools-thread-4:12199 ] - [ INFO ]  ConcurrentTestTools-thread-4 execute finshed.
+2018-01-11 15:34:26  [ ConcurrentTestTools-thread-3:12356 ] - [ INFO ]  ConcurrentTestTools-thread-3 execute finshed.
+2018-01-11 15:34:26  [ AMQP Connection 116.62.173.111:5672:12368 ] - [ WARN ]  a3396a67-6f75-4a9a-a988-89a2e43a9c8d:发送成功.
+2018-01-11 15:34:26  [ ConcurrentTestTools-thread-8:12369 ] - [ INFO ]  ConcurrentTestTools-thread-8 execute finshed.
+2018-01-11 15:34:26  [ AMQP Connection 116.62.173.111:5672:12373 ] - [ WARN ]  2d83a59a-afba-4c56-b376-050abc617711:发送成功.
+2018-01-11 15:34:26  [ ConcurrentTestTools-thread-6:12469 ] - [ INFO ]  ConcurrentTestTools-thread-6 execute finshed.
+2018-01-11 15:34:26  [ AMQP Connection 116.62.173.111:5672:12476 ] - [ WARN ]  79a22e8d-d138-4698-a99e-3085040576e7:发送成功.
+2018-01-11 15:34:26  [ AMQP Connection 116.62.173.111:5672:12479 ] - [ WARN ]  8615b717-a3ec-4b85-a84b-1418e8699b7c:发送成功.
+2018-01-11 15:34:26  [ AMQP Connection 116.62.173.111:5672:12481 ] - [ WARN ]  ccdec21e-e1ec-4fba-afe4-6f43850d867b:发送成功.
+2018-01-11 15:34:26  [ ConcurrentTestTools-thread-7:12577 ] - [ INFO ]  ConcurrentTestTools-thread-7 execute finshed.
+2018-01-11 15:34:26  [ Thread-3:12583 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 15:34:14 CST 2018]; root of context hierarchy
+2018-01-11 15:34:26  [ Thread-3:12584 ] - [ INFO ]  Stopping beans in phase 2147483647
+2018-01-11 15:34:26  [ AMQP Connection 116.62.173.111:5672:12632 ] - [ WARN ]  7dda4d76-a484-4287-bff3-90abf64afeed:发送成功.
+2018-01-11 15:34:26  [ AMQP Connection 116.62.173.111:5672:12712 ] - [ WARN ]  ac4f9856-7533-4768-8a97-0582c9da2623:发送成功.
+2018-01-11 15:34:26  [ AMQP Connection 116.62.173.111:5672:12716 ] - [ WARN ]  0a257f98-5e99-4da7-9aa4-bce99f1bd45d:发送成功.
+2018-01-11 15:34:26  [ AMQP Connection 116.62.173.111:5672:12716 ] - [ WARN ]  961e9e0a-cfe6-4d38-9b29-a02e98a5ca71:发送成功.
+2018-01-11 15:34:26  [ AMQP Connection 116.62.173.111:5672:12797 ] - [ WARN ]  3d13a28c-e769-4e40-b9fe-96dcdb385fc7:发送成功.
+2018-01-11 15:34:26  [ Thread-3:12798 ] - [ INFO ]  Waiting for workers to finish.
+2018-01-11 15:34:26  [ Thread-3:12801 ] - [ INFO ]  Successfully waited for workers to finish.
+2018-01-11 15:38:51  [ main:47 ] - [ INFO ]  Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nettyBio.BillNumTest], using SpringBootContextLoader
+2018-01-11 15:38:51  [ main:52 ] - [ INFO ]  Could not detect default resource locations for test class [com.nettyBio.BillNumTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-11 15:38:51  [ main:134 ] - [ INFO ]  Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-11 15:38:51  [ main:159 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@8e24743, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@74a10858, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23fe1d71, org.springframework.test.context.transaction.TransactionalTestExecutionListener@28ac3dc3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32eebfca, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e718207, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d371b2d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@543c6f6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13eb8acf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@51c8530f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7403c468]
+2018-01-11 15:38:51  [ main:664 ] - [ INFO ]  Starting BillNumTest on lijin1586 with PID 17892 (started by invengo in D:\ideaSpace\springbootDemo)
+2018-01-11 15:38:51  [ main:665 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-01-11 15:38:52  [ main:915 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 15:38:52 CST 2018]; root of context hierarchy
+2018-01-11 15:38:52  [ background-preinit:1035 ] - [ INFO ]  HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 15:38:53  [ main:1883 ] - [ INFO ]  Overriding bean definition for bean 'defaultExchange' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpConsumerConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpConsumerConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpProviderConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpProviderConfig.class]]
+2018-01-11 15:38:53  [ main:2186 ] - [ INFO ]  Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-11 15:38:53  [ main:2764 ] - [ INFO ]  Bean 'mybatisConfig' of type [com.ivg.demo.config.MybatisConfig$$EnhancerBySpringCGLIB$$458d8142] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:38:54  [ main:3022 ] - [ INFO ]  Bean 'dataSource' of type [org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:38:54  [ main:3200 ] - [ INFO ]  Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:38:54  [ main:3207 ] - [ INFO ]  Bean 'storeOutBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:38:54  [ main:3209 ] - [ INFO ]  Bean 'storeInBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:38:54  [ main:3211 ] - [ INFO ]  Bean 'storeInBillExMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:38:54  [ main:3258 ] - [ INFO ]  Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$639ff018] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-11 15:38:54  [ main:3643 ] - [ INFO ]  JedisConnectionFactory bean init success.
+2018-01-11 15:38:55  [ main:4516 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 15:38:52 CST 2018]; root of context hierarchy
+2018-01-11 15:38:55  [ main:4602 ] - [ INFO ]  Mapped "{[/inbill/findInBillAll]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.findInBill()
+2018-01-11 15:38:55  [ main:4603 ] - [ INFO ]  Mapped "{[/inbill/getInBill]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.getInBillBySupplierCode(java.lang.String)
+2018-01-11 15:38:55  [ main:4605 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 15:38:55  [ main:4605 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 15:38:55  [ main:4655 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 15:38:55  [ main:4655 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 15:38:55  [ main:4727 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 15:38:56  [ main:5627 ] - [ INFO ]  Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:38:56  [ main:5627 ] - [ INFO ]  Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:38:56  [ main:5628 ] - [ INFO ]  Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:38:56  [ main:5629 ] - [ INFO ]  Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-01-11 15:38:56  [ main:5629 ] - [ INFO ]  Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-01-11 15:38:56  [ main:5630 ] - [ INFO ]  Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:38:56  [ main:5631 ] - [ INFO ]  Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:38:56  [ main:5632 ] - [ INFO ]  Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:38:56  [ main:5632 ] - [ INFO ]  Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-01-11 15:38:56  [ main:5633 ] - [ INFO ]  Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:38:56  [ main:5633 ] - [ INFO ]  Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-01-11 15:38:56  [ main:5636 ] - [ INFO ]  Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:38:56  [ main:5637 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-01-11 15:38:56  [ main:5637 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-01-11 15:38:56  [ main:5637 ] - [ INFO ]  Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:38:56  [ main:5638 ] - [ INFO ]  Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-01-11 15:38:56  [ main:5638 ] - [ INFO ]  Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-11 15:38:57  [ main:6031 ] - [ INFO ]  Starting beans in phase 2147483647
+2018-01-11 15:38:57  [ messageContainer-1:6290 ] - [ INFO ]  Created new connection: mqConnectionFactory#3425321f:0/SimpleConnection@6a05cdda [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 59512]
+2018-01-11 15:38:57  [ main:6604 ] - [ INFO ]  Started BillNumTest in 6.306 seconds (JVM running for 7.156)
+2018-01-11 15:38:57  [ ConcurrentTestTools-thread-0:6661 ] - [ INFO ]  ConcurrentTestTools-thread-0 init finshed.
+2018-01-11 15:38:57  [ ConcurrentTestTools-thread-5:6671 ] - [ INFO ]  ConcurrentTestTools-thread-5 init finshed.
+2018-01-11 15:38:57  [ ConcurrentTestTools-thread-2:6671 ] - [ INFO ]  ConcurrentTestTools-thread-2 init finshed.
+2018-01-11 15:38:57  [ ConcurrentTestTools-thread-3:6671 ] - [ INFO ]  ConcurrentTestTools-thread-3 init finshed.
+2018-01-11 15:38:57  [ ConcurrentTestTools-thread-6:6671 ] - [ INFO ]  ConcurrentTestTools-thread-6 init finshed.
+2018-01-11 15:38:57  [ ConcurrentTestTools-thread-7:6671 ] - [ INFO ]  ConcurrentTestTools-thread-7 init finshed.
+2018-01-11 15:38:57  [ ConcurrentTestTools-thread-1:6661 ] - [ INFO ]  ConcurrentTestTools-thread-1 init finshed.
+2018-01-11 15:38:57  [ ConcurrentTestTools-thread-4:6661 ] - [ INFO ]  ConcurrentTestTools-thread-4 init finshed.
+2018-01-11 15:38:57  [ ConcurrentTestTools-thread-9:6671 ] - [ INFO ]  ConcurrentTestTools-thread-9 init finshed.
+2018-01-11 15:38:57  [ ConcurrentTestTools-thread-8:6671 ] - [ INFO ]  ConcurrentTestTools-thread-8 init finshed.
+2018-01-11 15:38:59  [ ConcurrentTestTools-thread-7:7849 ] - [ INFO ]  Created new connection: connectionFactory#43cf5e1c:0/SimpleConnection@2e0fecba [delegate=amqp://invengo@116.62.173.111:5672/, localPort= 59513]
+2018-01-11 15:38:59  [ AMQP Connection 116.62.173.111:5672:8227 ] - [ WARN ]  2d347cdd-f413-429f-8999-92ee089119bb:发送成功.
+2018-01-11 15:38:59  [ AMQP Connection 116.62.173.111:5672:8229 ] - [ WARN ]  57ad9a74-563f-481b-84ee-c0c24c59e658:发送成功.
+2018-01-11 15:38:59  [ AMQP Connection 116.62.173.111:5672:8232 ] - [ WARN ]  951defc1-3626-41c6-b1fe-e60be8caf625:发送成功.
+2018-01-11 15:38:59  [ AMQP Connection 116.62.173.111:5672:8324 ] - [ WARN ]  3182d348-3d7f-4421-b9d8-7659734304d6:发送成功.
+2018-01-11 15:38:59  [ AMQP Connection 116.62.173.111:5672:8557 ] - [ WARN ]  ef68f9f9-053a-4fbe-b85a-01c56e4f467f:发送成功.
+2018-01-11 15:38:59  [ AMQP Connection 116.62.173.111:5672:8563 ] - [ WARN ]  6dd7bd49-d052-4793-858b-8f27314ce97b:发送成功.
+2018-01-11 15:38:59  [ AMQP Connection 116.62.173.111:5672:8577 ] - [ WARN ]  d3e86ef6-ab30-4b6d-9871-c6f35e58d573:发送成功.
+2018-01-11 15:38:59  [ AMQP Connection 116.62.173.111:5672:8577 ] - [ WARN ]  b7437cc7-3ada-4f2b-9153-1690fa7616cb:发送成功.
+2018-01-11 15:38:59  [ AMQP Connection 116.62.173.111:5672:8580 ] - [ WARN ]  b5577c81-0276-4e0a-ad17-3afeea32fed3:发送成功.
+2018-01-11 15:38:59  [ AMQP Connection 116.62.173.111:5672:8691 ] - [ WARN ]  48fae2eb-6cc1-473f-84da-70e993327af2:发送成功.
+2018-01-11 15:39:00  [ AMQP Connection 116.62.173.111:5672:9165 ] - [ WARN ]  822193c7-63a8-4dc7-a344-bf300642f822:发送成功.
+2018-01-11 15:39:00  [ AMQP Connection 116.62.173.111:5672:9174 ] - [ WARN ]  2d6db352-f72f-4d69-b5f9-7766a951b768:发送成功.
+2018-01-11 15:39:00  [ AMQP Connection 116.62.173.111:5672:9290 ] - [ WARN ]  432f350b-dbb1-4126-863f-63cabb62f77d:发送成功.
+2018-01-11 15:39:00  [ AMQP Connection 116.62.173.111:5672:9298 ] - [ WARN ]  bfe2520d-d119-4d5b-ac74-ad1aecc1dd90:发送成功.
+2018-01-11 15:39:00  [ AMQP Connection 116.62.173.111:5672:9658 ] - [ WARN ]  451d9212-0029-450c-842a-63ba5cf039b1:发送成功.
+2018-01-11 15:39:00  [ AMQP Connection 116.62.173.111:5672:9664 ] - [ WARN ]  b68b6a1e-6be7-47d5-80e6-46734380a051:发送成功.
+2018-01-11 15:39:00  [ AMQP Connection 116.62.173.111:5672:9669 ] - [ WARN ]  c5bc0ee1-3010-4db8-a62f-e583418a528f:发送成功.
+2018-01-11 15:39:00  [ AMQP Connection 116.62.173.111:5672:9671 ] - [ WARN ]  15dfb6fb-a89f-4d1a-a108-a47a31ed90c4:发送成功.
+2018-01-11 15:39:00  [ AMQP Connection 116.62.173.111:5672:9684 ] - [ WARN ]  6c1c53e5-8a79-4953-81de-b1679163517e:发送成功.
+2018-01-11 15:39:00  [ AMQP Connection 116.62.173.111:5672:9692 ] - [ WARN ]  fb43696c-2611-4f47-a8f7-1db4fe69443c:发送成功.
+2018-01-11 15:39:01  [ AMQP Connection 116.62.173.111:5672:10348 ] - [ WARN ]  eb98c2d0-4ecc-42de-a73b-bed3f63d2b83:发送成功.
+2018-01-11 15:39:01  [ AMQP Connection 116.62.173.111:5672:10366 ] - [ WARN ]  2eca959a-7c62-4234-92b2-fe9a0364b85e:发送成功.
+2018-01-11 15:39:01  [ AMQP Connection 116.62.173.111:5672:10366 ] - [ WARN ]  df013fba-6a9b-4c61-aae7-cdeffe45aadd:发送成功.
+2018-01-11 15:39:01  [ AMQP Connection 116.62.173.111:5672:10374 ] - [ WARN ]  1923d793-cc07-451a-b9cb-ae8e01a9dd24:发送成功.
+2018-01-11 15:39:01  [ AMQP Connection 116.62.173.111:5672:10585 ] - [ WARN ]  d236d37d-54e3-4027-ae47-6da41d28d2a1:发送成功.
+2018-01-11 15:39:01  [ AMQP Connection 116.62.173.111:5672:10601 ] - [ WARN ]  2059f453-c162-41b5-a2ac-9ac29ac046b6:发送成功.
+2018-01-11 15:39:01  [ AMQP Connection 116.62.173.111:5672:10614 ] - [ WARN ]  353936a8-3b62-4b7c-8470-31da17ddbf48:发送成功.
+2018-01-11 15:39:01  [ AMQP Connection 116.62.173.111:5672:10631 ] - [ WARN ]  1add2927-a946-49ad-8ae8-fe9bddb14298:发送成功.
+2018-01-11 15:39:01  [ AMQP Connection 116.62.173.111:5672:10723 ] - [ WARN ]  b7e2637e-f644-440f-9b73-4bc296e4ec92:发送成功.
+2018-01-11 15:39:01  [ AMQP Connection 116.62.173.111:5672:10724 ] - [ WARN ]  2de51d68-44cd-437b-bb6f-3f3a2ff86530:发送成功.
+2018-01-11 15:39:02  [ AMQP Connection 116.62.173.111:5672:11153 ] - [ WARN ]  4c43755d-8cea-47f9-b8c0-167442b4fd8f:发送成功.
+2018-01-11 15:39:02  [ AMQP Connection 116.62.173.111:5672:11331 ] - [ WARN ]  e306f49c-dc5a-438e-9b4a-ed31b8ed3b52:发送成功.
+2018-01-11 15:39:02  [ AMQP Connection 116.62.173.111:5672:11351 ] - [ WARN ]  74dbd7f2-abec-48b3-ab81-91ac6c2cfd0d:发送成功.
+2018-01-11 15:39:02  [ AMQP Connection 116.62.173.111:5672:11361 ] - [ WARN ]  cc9a5934-3fa8-414e-93f6-77c31f19f57e:发送成功.
+2018-01-11 15:39:02  [ AMQP Connection 116.62.173.111:5672:11525 ] - [ WARN ]  ca413390-7c9e-482e-a69e-f7b8bd2031e6:发送成功.
+2018-01-11 15:39:02  [ AMQP Connection 116.62.173.111:5672:11530 ] - [ WARN ]  b3d3f048-64f1-4258-9f53-5bf9b747c3d4:发送成功.
+2018-01-11 15:39:02  [ AMQP Connection 116.62.173.111:5672:11537 ] - [ WARN ]  38d0bbbe-1454-442f-a117-5a738b5b8c3c:发送成功.
+2018-01-11 15:39:02  [ AMQP Connection 116.62.173.111:5672:11546 ] - [ WARN ]  7cafd83b-48af-4f0c-b867-cfaa7159e75b:发送成功.
+2018-01-11 15:39:02  [ AMQP Connection 116.62.173.111:5672:11554 ] - [ WARN ]  f0d7e1fe-5c10-403c-a1bb-dbe51e3abfd1:发送成功.
+2018-01-11 15:39:02  [ AMQP Connection 116.62.173.111:5672:11638 ] - [ WARN ]  326518b2-5b15-4595-b0a2-d922f8dff8ac:发送成功.
+2018-01-11 15:39:03  [ AMQP Connection 116.62.173.111:5672:12334 ] - [ WARN ]  3cb6b582-db4c-4f62-9538-a638a704fc7e:发送成功.
+2018-01-11 15:39:03  [ AMQP Connection 116.62.173.111:5672:12335 ] - [ WARN ]  91c46085-4a4b-4318-8924-b8e4dbe8a71f:发送成功.
+2018-01-11 15:39:03  [ AMQP Connection 116.62.173.111:5672:12354 ] - [ WARN ]  65489cfb-5382-4db8-b1a3-d51a7efd5cc1:发送成功.
+2018-01-11 15:39:03  [ AMQP Connection 116.62.173.111:5672:12421 ] - [ WARN ]  67f34ac4-6f8e-438c-976f-ebce5355c0af:发送成功.
+2018-01-11 15:39:03  [ AMQP Connection 116.62.173.111:5672:12423 ] - [ WARN ]  9dcae5c6-1a4d-477d-a08c-74ab37fa42e9:发送成功.
+2018-01-11 15:39:03  [ AMQP Connection 116.62.173.111:5672:12433 ] - [ WARN ]  a933c0f2-6e2f-409f-aa7d-db5ac6d79b21:发送成功.
+2018-01-11 15:39:03  [ AMQP Connection 116.62.173.111:5672:12439 ] - [ WARN ]  5ca30391-9d33-4063-bf9d-9b66be8b41b6:发送成功.
+2018-01-11 15:39:03  [ AMQP Connection 116.62.173.111:5672:12531 ] - [ WARN ]  f490444c-7237-42c0-b254-6bed8a9ab99c:发送成功.
+2018-01-11 15:39:03  [ AMQP Connection 116.62.173.111:5672:12672 ] - [ WARN ]  05aee373-f3f9-4c89-abc8-8c6456dc91e0:发送成功.
+2018-01-11 15:39:03  [ AMQP Connection 116.62.173.111:5672:12792 ] - [ WARN ]  9534ccfe-abb3-4cb7-84fa-e235b673b899:发送成功.
+2018-01-11 15:39:04  [ AMQP Connection 116.62.173.111:5672:13224 ] - [ WARN ]  7b82e3fc-f4a2-4aa2-b7a3-d86629e7dbc5:发送成功.
+2018-01-11 15:39:04  [ AMQP Connection 116.62.173.111:5672:13229 ] - [ WARN ]  320442ce-6ef3-4792-9090-624bcf1cfaed:发送成功.
+2018-01-11 15:39:04  [ AMQP Connection 116.62.173.111:5672:13239 ] - [ WARN ]  6ecfa217-183f-4c0f-9292-4d43fcf68bd0:发送成功.
+2018-01-11 15:39:04  [ AMQP Connection 116.62.173.111:5672:13395 ] - [ WARN ]  283cdfee-ae50-440e-a19a-09f8b77d5878:发送成功.
+2018-01-11 15:39:04  [ AMQP Connection 116.62.173.111:5672:13461 ] - [ WARN ]  273532c8-b7eb-43f7-a55a-83ee430375d3:发送成功.
+2018-01-11 15:39:04  [ AMQP Connection 116.62.173.111:5672:13475 ] - [ WARN ]  5ec9ea8c-4836-4521-94c8-4ffafff06959:发送成功.
+2018-01-11 15:39:04  [ AMQP Connection 116.62.173.111:5672:13475 ] - [ WARN ]  d32a9961-4d3e-4dfe-87d4-b588b6f320bc:发送成功.
+2018-01-11 15:39:04  [ AMQP Connection 116.62.173.111:5672:13490 ] - [ WARN ]  f436dbcd-61b9-471a-b246-371f59c54c52:发送成功.
+2018-01-11 15:39:04  [ AMQP Connection 116.62.173.111:5672:13495 ] - [ WARN ]  2e180eb8-c31e-4794-911c-e119fbefcd02:发送成功.
+2018-01-11 15:39:04  [ AMQP Connection 116.62.173.111:5672:13633 ] - [ WARN ]  09efbdd4-65ec-4cc8-a37b-56edfbb4219e:发送成功.
+2018-01-11 15:39:05  [ AMQP Connection 116.62.173.111:5672:14195 ] - [ WARN ]  4ef7d5fc-98aa-4717-ba0b-9196dcca38e2:发送成功.
+2018-01-11 15:39:05  [ AMQP Connection 116.62.173.111:5672:14397 ] - [ WARN ]  e2c681a9-3922-4d07-8db7-81a5aaab2de4:发送成功.
+2018-01-11 15:39:05  [ AMQP Connection 116.62.173.111:5672:14398 ] - [ WARN ]  18277742-361e-4912-9bb5-e81dfac66913:发送成功.
+2018-01-11 15:39:05  [ AMQP Connection 116.62.173.111:5672:14403 ] - [ WARN ]  d236efcc-a06b-4dcc-b2d9-3baf5381b575:发送成功.
+2018-01-11 15:39:05  [ AMQP Connection 116.62.173.111:5672:14478 ] - [ WARN ]  5a008181-efc7-4b35-8a24-f7d9d8771fd1:发送成功.
+2018-01-11 15:39:05  [ AMQP Connection 116.62.173.111:5672:14480 ] - [ WARN ]  0c5ae405-8045-4c96-9b81-b237ea966295:发送成功.
+2018-01-11 15:39:05  [ AMQP Connection 116.62.173.111:5672:14494 ] - [ WARN ]  e5350ff3-42fb-46e5-bf30-1d5109dc5139:发送成功.
+2018-01-11 15:39:05  [ AMQP Connection 116.62.173.111:5672:14496 ] - [ WARN ]  38c97c9b-b417-407f-8bdd-d299263a401e:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:14832 ] - [ WARN ]  03a3731b-1df4-4f6c-b33f-17ab80dc01c0:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:14836 ] - [ WARN ]  8d6201d9-2fed-49b5-8761-0f21cb8f0b47:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:15237 ] - [ WARN ]  078a13f7-baa6-4fb6-9168-6a34f219c0af:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:15245 ] - [ WARN ]  e7394719-ff46-45ae-93c1-190b98757a37:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:15250 ] - [ WARN ]  968e01e0-68d3-406a-9461-cab6120fb243:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:15251 ] - [ WARN ]  e650fcf9-c71d-474d-adfc-744d2d8f20fe:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:15575 ] - [ WARN ]  f5863e3d-aa96-4163-8f76-9e5416c51147:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:15593 ] - [ WARN ]  45cacc81-306a-43a0-b329-eb64523f6346:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:15602 ] - [ WARN ]  cb3633ca-a3bc-4e67-871e-baaf3ca47927:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:15607 ] - [ WARN ]  3e8309ca-c4ee-4086-b14f-b99e76718756:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:15623 ] - [ WARN ]  d03f4d28-04f1-43b0-95ad-7b8e811be09a:发送成功.
+2018-01-11 15:39:06  [ AMQP Connection 116.62.173.111:5672:15627 ] - [ WARN ]  15610d73-6ba4-4757-a6e4-876a9df35e85:发送成功.
+2018-01-11 15:39:07  [ AMQP Connection 116.62.173.111:5672:16203 ] - [ WARN ]  f650ebf7-120a-466b-bc53-8a44fe4a2d0e:发送成功.
+2018-01-11 15:39:07  [ AMQP Connection 116.62.173.111:5672:16211 ] - [ WARN ]  3ada687a-052a-4083-838a-eb44cd6d5c58:发送成功.
+2018-01-11 15:39:07  [ AMQP Connection 116.62.173.111:5672:16286 ] - [ WARN ]  3efe7545-ef99-4cdf-9a5e-89d6bf8bcad4:发送成功.
+2018-01-11 15:39:07  [ AMQP Connection 116.62.173.111:5672:16287 ] - [ WARN ]  78b0a824-0eca-4170-b2a2-4c60e3d48310:发送成功.
+2018-01-11 15:39:07  [ AMQP Connection 116.62.173.111:5672:16474 ] - [ WARN ]  beef0d2e-5128-4cea-827e-afd6fa7fc445:发送成功.
+2018-01-11 15:39:07  [ AMQP Connection 116.62.173.111:5672:16477 ] - [ WARN ]  ab6e436d-5f10-41ee-aa31-eb508f945e81:发送成功.
+2018-01-11 15:39:07  [ AMQP Connection 116.62.173.111:5672:16484 ] - [ WARN ]  a66bf578-712e-4119-8a71-1b8008c8b4ce:发送成功.
+2018-01-11 15:39:07  [ AMQP Connection 116.62.173.111:5672:16492 ] - [ WARN ]  e5d9e3b5-2e0c-411c-8ad2-2d9a7bd9d644:发送成功.
+2018-01-11 15:39:07  [ AMQP Connection 116.62.173.111:5672:16499 ] - [ WARN ]  5d67c5b5-62ec-477d-a53f-92ea18ba9be5:发送成功.
+2018-01-11 15:39:07  [ AMQP Connection 116.62.173.111:5672:16560 ] - [ WARN ]  2175f4a2-35ad-42c0-ad96-fd2df73a36bc:发送成功.
+2018-01-11 15:39:08  [ ConcurrentTestTools-thread-2:17019 ] - [ INFO ]  ConcurrentTestTools-thread-2 execute finshed.
+2018-01-11 15:39:08  [ ConcurrentTestTools-thread-3:17021 ] - [ INFO ]  ConcurrentTestTools-thread-3 execute finshed.
+2018-01-11 15:39:08  [ ConcurrentTestTools-thread-9:17022 ] - [ INFO ]  ConcurrentTestTools-thread-9 execute finshed.
+2018-01-11 15:39:08  [ ConcurrentTestTools-thread-1:17022 ] - [ INFO ]  ConcurrentTestTools-thread-1 execute finshed.
+2018-01-11 15:39:08  [ ConcurrentTestTools-thread-5:17022 ] - [ INFO ]  ConcurrentTestTools-thread-5 execute finshed.
+2018-01-11 15:39:08  [ ConcurrentTestTools-thread-8:17055 ] - [ INFO ]  ConcurrentTestTools-thread-8 execute finshed.
+2018-01-11 15:39:08  [ ConcurrentTestTools-thread-7:17263 ] - [ INFO ]  ConcurrentTestTools-thread-7 execute finshed.
+2018-01-11 15:39:08  [ AMQP Connection 116.62.173.111:5672:17344 ] - [ WARN ]  dc615ffa-7ecb-44d9-8456-8b53c6e1c104:发送成功.
+2018-01-11 15:39:08  [ AMQP Connection 116.62.173.111:5672:17346 ] - [ WARN ]  403c9dcc-d13b-4651-bb2b-0d51f913b0d5:发送成功.
+2018-01-11 15:39:08  [ ConcurrentTestTools-thread-6:17349 ] - [ INFO ]  ConcurrentTestTools-thread-6 execute finshed.
+2018-01-11 15:39:08  [ AMQP Connection 116.62.173.111:5672:17351 ] - [ WARN ]  bf8cbfe1-b088-4a31-b77b-5a42bdec13e7:发送成功.
+2018-01-11 15:39:08  [ AMQP Connection 116.62.173.111:5672:17355 ] - [ WARN ]  107b2aaf-5795-4aea-ac0c-61490c72fc7a:发送成功.
+2018-01-11 15:39:08  [ ConcurrentTestTools-thread-0:17365 ] - [ INFO ]  ConcurrentTestTools-thread-0 execute finshed.
+2018-01-11 15:39:08  [ AMQP Connection 116.62.173.111:5672:17376 ] - [ WARN ]  0078f294-1f8f-455c-9bab-c898cf2c1ea7:发送成功.
+2018-01-11 15:39:08  [ AMQP Connection 116.62.173.111:5672:17384 ] - [ WARN ]  c7664600-317b-4878-9c6a-d2423abfe9c0:发送成功.
+2018-01-11 15:39:08  [ ConcurrentTestTools-thread-4:17400 ] - [ INFO ]  ConcurrentTestTools-thread-4 execute finshed.
+2018-01-11 15:39:08  [ Thread-3:17410 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@557caf28: startup date [Thu Jan 11 15:38:52 CST 2018]; root of context hierarchy
+2018-01-11 15:39:08  [ Thread-3:17412 ] - [ INFO ]  Stopping beans in phase 2147483647
+2018-01-11 15:39:08  [ AMQP Connection 116.62.173.111:5672:17697 ] - [ WARN ]  df097843-1f90-4f70-a66f-e1d14511b0a0:发送成功.
+2018-01-11 15:39:08  [ AMQP Connection 116.62.173.111:5672:17701 ] - [ WARN ]  10f62c9d-6cf4-4cc6-8774-dcccc6708536:发送成功.
+2018-01-11 15:39:08  [ AMQP Connection 116.62.173.111:5672:17709 ] - [ WARN ]  7a49de22-441d-49e4-9cea-8d8e65df6719:发送成功.
+2018-01-11 15:39:08  [ AMQP Connection 116.62.173.111:5672:17709 ] - [ WARN ]  24c0933f-d0d0-4ed6-abe8-e3ebf45a7dca:发送成功.
+2018-01-11 15:39:09  [ Thread-3:18418 ] - [ INFO ]  Waiting for workers to finish.
+2018-01-11 15:39:09  [ Thread-3:18421 ] - [ INFO ]  Successfully waited for workers to finish.

@@ -1,0 +1,103 @@
+2018-01-02 19:17:39  [ main:402 ] - [ INFO ]  Starting Application on lijin1586 with PID 24500 (D:\ideaSpace\springbootDemo\target\classes started by invengo in D:\ideaSpace\springbootDemo)
+2018-01-02 19:17:39  [ main:403 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2018-01-02 19:17:40  [ main:971 ] - [ INFO ]  Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f8edcc5: startup date [Tue Jan 02 19:17:40 CST 2018]; root of context hierarchy
+2018-01-02 19:17:40  [ background-preinit:1053 ] - [ INFO ]  HV000001: Hibernate Validator 5.3.6.Final
+2018-01-02 19:17:41  [ main:2304 ] - [ INFO ]  Overriding bean definition for bean 'defaultExchange' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpConsumerConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpConsumerConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=amqpProviderConfig; factoryMethodName=defaultExchange; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/ivg/demo/config/AmqpProviderConfig.class]]
+2018-01-02 19:17:41  [ main:2752 ] - [ INFO ]  Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-02 19:17:42  [ main:3624 ] - [ INFO ]  Bean 'mybatisConfig' of type [com.ivg.demo.config.MybatisConfig$$EnhancerBySpringCGLIB$$5b34e5ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 19:17:43  [ main:4071 ] - [ INFO ]  Bean 'dataSource' of type [org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 19:17:43  [ main:4333 ] - [ INFO ]  Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 19:17:43  [ main:4340 ] - [ INFO ]  Bean 'storeOutBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 19:17:43  [ main:4343 ] - [ INFO ]  Bean 'storeInBillMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 19:17:43  [ main:4349 ] - [ INFO ]  Bean 'storeInBillExMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 19:17:43  [ main:4395 ] - [ INFO ]  Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$794754a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 19:17:44  [ main:5438 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2018-01-02 19:17:44  [ localhost-startStop-1:5741 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 4779 ms
+2018-01-02 19:17:45  [ localhost-startStop-1:6214 ] - [ INFO ]  Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-02 19:17:45  [ localhost-startStop-1:6221 ] - [ INFO ]  Mapping filter: 'metricsFilter' to: [/*]
+2018-01-02 19:17:45  [ localhost-startStop-1:6221 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-02 19:17:45  [ localhost-startStop-1:6221 ] - [ INFO ]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-02 19:17:45  [ localhost-startStop-1:6221 ] - [ INFO ]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-02 19:17:45  [ localhost-startStop-1:6221 ] - [ INFO ]  Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-02 19:17:45  [ localhost-startStop-1:6221 ] - [ INFO ]  Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-01-02 19:17:45  [ localhost-startStop-1:6221 ] - [ INFO ]  Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-01-02 19:17:45  [ main:6668 ] - [ INFO ]  JedisConnectionFactory bean init success.
+2018-01-02 19:17:46  [ main:7599 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f8edcc5: startup date [Tue Jan 02 19:17:40 CST 2018]; root of context hierarchy
+2018-01-02 19:17:46  [ main:7720 ] - [ INFO ]  Mapped "{[/inbill/getInBill]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.getInBillBySupplierCode(java.lang.String)
+2018-01-02 19:17:46  [ main:7721 ] - [ INFO ]  Mapped "{[/inbill/findInBillAll]}" onto public java.util.List<com.ivg.demo.model.entity.ex.StoreInBillEx> com.ivg.demo.controller.InBillController.findInBill()
+2018-01-02 19:17:46  [ main:7726 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-02 19:17:46  [ main:7726 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-02 19:17:46  [ main:7802 ] - [ INFO ]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-02 19:17:46  [ main:7802 ] - [ INFO ]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-02 19:17:47  [ main:7880 ] - [ INFO ]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-02 19:17:48  [ main:9403 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-01-02 19:17:48  [ main:9404 ] - [ INFO ]  Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-01-02 19:17:48  [ main:9404 ] - [ INFO ]  Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-02 19:17:48  [ main:9405 ] - [ INFO ]  Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-01-02 19:17:48  [ main:9405 ] - [ INFO ]  Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-02 19:17:48  [ main:9408 ] - [ INFO ]  Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-01-02 19:17:48  [ main:9408 ] - [ INFO ]  Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-02 19:17:48  [ main:9409 ] - [ INFO ]  Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-01-02 19:17:48  [ main:9410 ] - [ INFO ]  Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-01-02 19:17:48  [ main:9419 ] - [ INFO ]  Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-02 19:17:48  [ main:9420 ] - [ INFO ]  Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-02 19:17:48  [ main:9421 ] - [ INFO ]  Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-02 19:17:48  [ main:9421 ] - [ INFO ]  Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-02 19:17:48  [ main:9423 ] - [ INFO ]  Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-02 19:17:48  [ main:9424 ] - [ INFO ]  Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-02 19:17:48  [ main:9424 ] - [ INFO ]  Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-02 19:17:48  [ main:9425 ] - [ INFO ]  Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-01-02 19:17:49  [ main:10030 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-01-02 19:17:49  [ main:10039 ] - [ INFO ]  Bean with name 'mqConnectionFactory' has been autodetected for JMX exposure
+2018-01-02 19:17:49  [ main:10039 ] - [ INFO ]  Bean with name 'connectionFactory' has been autodetected for JMX exposure
+2018-01-02 19:17:49  [ main:10044 ] - [ INFO ]  Located managed bean 'connectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=connectionFactory,type=CachingConnectionFactory]
+2018-01-02 19:17:49  [ main:10068 ] - [ INFO ]  Located managed bean 'mqConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=mqConnectionFactory,type=CachingConnectionFactory]
+2018-01-02 19:17:49  [ main:10072 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2018-01-02 19:17:49  [ main:10079 ] - [ INFO ]  Starting beans in phase 0
+2018-01-02 19:17:49  [ main:10081 ] - [ INFO ]  Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-01-02 19:17:49  [ main:10088 ] - [ INFO ]  Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-01-02 19:17:49  [ main:10100 ] - [ INFO ]  Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-01-02 19:17:49  [ main:10103 ] - [ INFO ]  Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-01-02 19:17:49  [ main:10105 ] - [ INFO ]  Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-01-02 19:17:49  [ main:10107 ] - [ INFO ]  Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-01-02 19:17:49  [ main:10113 ] - [ INFO ]  Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-01-02 19:17:49  [ main:10120 ] - [ INFO ]  Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-01-02 19:17:49  [ main:10122 ] - [ INFO ]  Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-01-02 19:17:49  [ main:10123 ] - [ INFO ]  Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-01-02 19:17:49  [ main:10125 ] - [ INFO ]  Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-01-02 19:17:49  [ main:10128 ] - [ INFO ]  Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-01-02 19:17:49  [ main:10130 ] - [ INFO ]  Starting beans in phase 2147483647
+2018-01-02 19:17:49  [ messageContainer-1:10229 ] - [ INFO ]  Created new connection: mqConnectionFactory#6fe8b6a:0/SimpleConnection@4652fef6 [delegate=amqp://invengo@127.0.0.1:5672/, localPort= 55997]
+2018-01-02 19:17:49  [ main:10534 ] - [ INFO ]  Tomcat started on port(s): 8080 (http)
+2018-01-02 19:17:49  [ main:10540 ] - [ INFO ]  Started Application in 10.582 seconds (JVM running for 11.288)
+2018-01-02 19:17:49  [ main:10540 ] - [ INFO ]  demo Start Success
+2018-01-02 19:17:49  [ messageContainer-1:10819 ] - [ WARN ]  Execution of Rabbit message listener failed.
+org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener threw exception
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.wrapToListenerExecutionFailedExceptionIfNeeded(AbstractMessageListenerContainer.java:941)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:851)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:771)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$001(SimpleMessageListenerContainer.java:102)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$1.invokeListener(SimpleMessageListenerContainer.java:198)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.invokeListener(SimpleMessageListenerContainer.java:1311)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:752)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1254)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1224)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1600(SimpleMessageListenerContainer.java:102)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1470)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassCastException: java.lang.Long cannot be cast to com.alibaba.fastjson.JSONObject
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:169)
+	at com.ivg.comp.mq.MqMessageListener.onMessage(MqMessageListener.java:28)
+	at com.ivg.comp.mq.MqMessageListener$$FastClassBySpringCGLIB$$ffffb76b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.ivg.comp.mq.MqMessageListener$$EnhancerBySpringCGLIB$$29d272b9.onMessage(<generated>)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:848)
+	... 10 more
+2018-01-02 19:17:49  [ messageContainer-1:10822 ] - [ WARN ]  Fatal message conversion error; message rejected; it will be dropped or routed to a dead letter exchange, if so configured: (Body:'[B@45c5030d(byte[16])' MessageProperties [headers={}, timestamp=null, messageId=null, userId=null, receivedUserId=null, appId=null, clusterId=null, type=null, correlationId=null, correlationIdString=null, replyTo=null, contentType=null, contentEncoding=null, contentLength=0, deliveryMode=null, receivedDeliveryMode=NON_PERSISTENT, expiration=null, priority=null, redelivered=true, receivedExchange=, receivedRoutingKey=mj-lead-queue, receivedDelay=null, deliveryTag=1, messageCount=0, consumerTag=amq.ctag-uyAKN-Aael0O4Ov0aw1NOA, consumerQueue=mj-lead-queue])
